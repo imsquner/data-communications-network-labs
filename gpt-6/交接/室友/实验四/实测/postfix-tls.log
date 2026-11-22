@@ -1,0 +1,2 @@
+Nov 18 01:15:03 netlab-ubuntu postfix/smtp[20798]: Verified TLS connection established to smtp.qq.com[120.241.140.18]:465: TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)
+Nov 18 01:15:03 netlab-ubuntu postfix/smtp[20802]: Verified TLS connection established to smtp.qq.com[120.233.23.191]:465: TLSv1.3 with cipher TLS_AES_256_GCM_SHA384 (256/256 bits)

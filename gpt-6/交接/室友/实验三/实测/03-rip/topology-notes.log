@@ -1,0 +1,43 @@
+2026-11-17T17:53:27+08:00 node R1 dynamips NM-4E console=5000
+2026-11-17T17:53:31+08:00 node R2 dynamips NM-4E console=5002
+2026-11-17T17:53:31+08:00 node PC1 vpcs  console=5004
+2026-11-17T17:53:31+08:00 node PC2 vpcs  console=5006
+2026-11-17T17:53:37+08:00 link PC1:Ethernet0 <-> R1:Ethernet0/1 458000d5-c346-4487-9ac6-285e37ca7fb4
+2026-11-17T17:53:43+08:00 link R1:Ethernet0/0 <-> R2:Ethernet0/0 23e3007c-373e-4fda-b8c1-5ef697ef39f9
+2026-11-17T17:53:43+08:00 link R2:Ethernet0/1 <-> PC2:Ethernet0 5473709c-897f-4bee-8f13-40572774d837
+2026-11-17T17:53:57+08:00 all nodes started
+2026-11-17T17:54:38+08:00 direct: PASS
+2026-11-17T17:54:51+08:00 learned: PASS
+2026-11-17T17:54:51+08:00 R1 suspend: started
+2026-11-17T17:54:51+08:00 R2 suspend: started
+2026-11-17T17:54:51+08:00 physical topology link deleted while both routers suspended
+2026-11-17T17:54:51+08:00 R1 resume: suspended
+2026-11-17T17:54:51+08:00 R2 resume: suspended
+2026-11-17T17:54:54+08:00 waiting for RIP withdrawal, absent=(False, False)
+2026-11-17T17:55:12+08:00 waiting for RIP withdrawal, absent=(False, False)
+2026-11-17T17:55:30+08:00 waiting for RIP withdrawal, absent=(False, False)
+2026-11-17T17:55:47+08:00 waiting for RIP withdrawal, absent=(False, False)
+2026-11-17T17:56:05+08:00 waiting for RIP withdrawal, absent=(False, False)
+2026-11-17T17:56:23+08:00 waiting for RIP withdrawal, absent=(False, False)
+2026-11-17T17:56:41+08:00 waiting for RIP withdrawal, absent=(False, False)
+2026-11-17T17:56:58+08:00 waiting for RIP withdrawal, absent=(False, False)
+2026-11-17T17:57:16+08:00 waiting for RIP withdrawal, absent=(False, False)
+2026-11-17T17:57:34+08:00 waiting for RIP withdrawal, absent=(False, False)
+2026-11-17T17:57:52+08:00 waiting for RIP withdrawal, absent=(False, False)
+2026-11-17T17:58:09+08:00 waiting for RIP withdrawal, absent=(False, False)
+2026-11-17T17:58:27+08:00 waiting for RIP withdrawal, absent=(False, False)
+2026-11-17T17:58:45+08:00 waiting for RIP withdrawal, absent=(False, False)
+2026-11-17T17:59:03+08:00 waiting for RIP withdrawal, absent=(False, False)
+2026-11-17T17:59:21+08:00 waiting for RIP withdrawal, absent=(False, False)
+2026-11-17T17:59:43+08:00 link-removed: PASS
+2026-11-17T17:59:43+08:00 R1 suspend: started
+2026-11-17T17:59:43+08:00 R2 suspend: started
+2026-11-17T17:59:43+08:00 link R1:Ethernet0/0 <-> R2:Ethernet0/0 7c0c0143-fa26-479f-ba9a-f86e08c87b58
+2026-11-17T17:59:43+08:00 R1 resume: suspended
+2026-11-17T17:59:43+08:00 R2 resume: suspended
+2026-11-17T18:00:57+08:00 all nodes stopped
+2026-11-17T18:01:32+08:00 recovery: hot reconnect did not restore RIP; restarting nodes in the same reconnected project
+2026-11-17T18:01:56+08:00 all nodes started
+2026-11-17T18:02:52+08:00 link-restored: PASS
+2026-11-17T18:02:59+08:00 all nodes stopped
+2026-11-17T18:03:06+08:00 export verified NL3-B-174753-RIP.gns3project

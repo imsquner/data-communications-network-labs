@@ -1,0 +1,18 @@
+File name:           D:\学校文件\01_学业课程\大三上\数据通信与计算机网络\通讯\通讯\gpt-6\实验\实验二\验收\08-DHCP与IPv4分片.pcapng
+Number of packets:   40
+Earliest packet time: 2026-11-17 15:13:21.563273
+Latest packet time:   2026-11-17 15:14:30.480287
+Number of interfaces in file: 1
+Interface #0 info:
+                     Name = \Device\NPF_{605D60D3-AA39-4298-AC4C-B0701D132376}
+                     Description = VMware Network Adapter VMnet1
+                     Encapsulation = Ethernet (1 - ether)
+                     Hardware = VMware Virtual Ethernet Adapter for VMnet1
+                     Capture length = 262144
+                     Time precision = microseconds (6)
+                     Time ticks per second = 1000000
+                     Time resolution = 0x06
+                     Filter string = (ether host 00:0c:29:ed:66:f6 or udp port 67 or udp port 68) and (arp or ip proto 1 or udp port 67 or udp port 68)
+                     Operating system = 64-bit Windows 11 (25H2), build 26200
+                     Number of stat entries = 1
+                     Number of packets = 40

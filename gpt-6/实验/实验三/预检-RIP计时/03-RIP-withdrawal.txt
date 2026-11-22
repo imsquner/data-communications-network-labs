@@ -1,0 +1,543 @@
+
+2026-11-17T17:35:15+08:00 learned routes absent (False, False)
+R1
+show ip route
+Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+C    202.103.2.0/24 is directly connected, Ethernet0/0
+C    202.103.1.0/24 is directly connected, Ethernet0/1
+R    192.168.1.0/24 [120/1] via 202.103.2.2, 00:00:08, Ethernet0/0
+R1#
+R2
+show ip route
+Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+C    202.103.2.0/24 is directly connected, Ethernet0/0
+R    202.103.1.0/24 [120/1] via 202.103.2.1, 00:00:11, Ethernet0/0
+C    192.168.1.0/24 is directly connected, Ethernet0/1
+R2#
+
+2026-11-17T17:35:33+08:00 learned routes absent (False, False)
+R1
+show ip route
+Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+C    202.103.2.0/24 is directly connected, Ethernet0/0
+C    202.103.1.0/24 is directly connected, Ethernet0/1
+R    192.168.1.0/24 [120/1] via 202.103.2.2, 00:00:23, Ethernet0/0
+R1#
+R2
+show ip route
+Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+C    202.103.2.0/24 is directly connected, Ethernet0/0
+R    202.103.1.0/24 [120/1] via 202.103.2.1, 00:00:27, Ethernet0/0
+C    192.168.1.0/24 is directly connected, Ethernet0/1
+R2#
+
+2026-11-17T17:35:51+08:00 learned routes absent (False, False)
+R1
+show ip route
+Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+C    202.103.2.0/24 is directly connected, Ethernet0/0
+C    202.103.1.0/24 is directly connected, Ethernet0/1
+R    192.168.1.0/24 [120/1] via 202.103.2.2, 00:00:38, Ethernet0/0
+R1#
+R2
+show ip route
+Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+C    202.103.2.0/24 is directly connected, Ethernet0/0
+R    202.103.1.0/24 [120/1] via 202.103.2.1, 00:00:44, Ethernet0/0
+C    192.168.1.0/24 is directly connected, Ethernet0/1
+R2#
+
+2026-11-17T17:36:09+08:00 learned routes absent (False, False)
+R1
+show ip route
+Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+C    202.103.2.0/24 is directly connected, Ethernet0/0
+C    202.103.1.0/24 is directly connected, Ethernet0/1
+R    192.168.1.0/24 [120/1] via 202.103.2.2, 00:00:54, Ethernet0/0
+R1#
+R2
+show ip route
+Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+C    202.103.2.0/24 is directly connected, Ethernet0/0
+R    202.103.1.0/24 [120/1] via 202.103.2.1, 00:01:00, Ethernet0/0
+C    192.168.1.0/24 is directly connected, Ethernet0/1
+R2#
+
+2026-11-17T17:36:26+08:00 learned routes absent (False, False)
+R1
+show ip route
+Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+C    202.103.2.0/24 is directly connected, Ethernet0/0
+C    202.103.1.0/24 is directly connected, Ethernet0/1
+R    192.168.1.0/24 [120/1] via 202.103.2.2, 00:01:09, Ethernet0/0
+R1#
+R2
+show ip route
+Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+C    202.103.2.0/24 is directly connected, Ethernet0/0
+R    202.103.1.0/24 [120/1] via 202.103.2.1, 00:01:16, Ethernet0/0
+C    192.168.1.0/24 is directly connected, Ethernet0/1
+R2#
+
+2026-11-17T17:36:44+08:00 learned routes absent (False, False)
+R1
+show ip route
+Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+C    202.103.2.0/24 is directly connected, Ethernet0/0
+C    202.103.1.0/24 is directly connected, Ethernet0/1
+R    192.168.1.0/24 [120/1] via 202.103.2.2, 00:01:24, Ethernet0/0
+R1#
+R2
+show ip route
+Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+C    202.103.2.0/24 is directly connected, Ethernet0/0
+R    202.103.1.0/24 [120/1] via 202.103.2.1, 00:01:32, Ethernet0/0
+C    192.168.1.0/24 is directly connected, Ethernet0/1
+R2#
+
+2026-11-17T17:37:02+08:00 learned routes absent (False, False)
+R1
+show ip route
+Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+C    202.103.2.0/24 is directly connected, Ethernet0/0
+C    202.103.1.0/24 is directly connected, Ethernet0/1
+R    192.168.1.0/24 [120/1] via 202.103.2.2, 00:01:39, Ethernet0/0
+R1#
+R2
+show ip route
+Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+C    202.103.2.0/24 is directly connected, Ethernet0/0
+R    202.103.1.0/24 [120/1] via 202.103.2.1, 00:01:48, Ethernet0/0
+C    192.168.1.0/24 is directly connected, Ethernet0/1
+R2#
+
+2026-11-17T17:37:20+08:00 learned routes absent (False, False)
+R1
+show ip route
+Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+C    202.103.2.0/24 is directly connected, Ethernet0/0
+C    202.103.1.0/24 is directly connected, Ethernet0/1
+R    192.168.1.0/24 [120/1] via 202.103.2.2, 00:01:54, Ethernet0/0
+R1#
+R2
+show ip route
+Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+C    202.103.2.0/24 is directly connected, Ethernet0/0
+R    202.103.1.0/24 [120/1] via 202.103.2.1, 00:02:04, Ethernet0/0
+C    192.168.1.0/24 is directly connected, Ethernet0/1
+R2#
+
+2026-11-17T17:37:37+08:00 learned routes absent (False, False)
+R1
+show ip route
+Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+C    202.103.2.0/24 is directly connected, Ethernet0/0
+C    202.103.1.0/24 is directly connected, Ethernet0/1
+R    192.168.1.0/24 [120/1] via 202.103.2.2, 00:02:08, Ethernet0/0
+R1#
+R2
+show ip route
+Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+C    202.103.2.0/24 is directly connected, Ethernet0/0
+R    202.103.1.0/24 [120/1] via 202.103.2.1, 00:02:21, Ethernet0/0
+C    192.168.1.0/24 is directly connected, Ethernet0/1
+R2#
+
+2026-11-17T17:37:55+08:00 learned routes absent (False, False)
+R1
+show ip route
+Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+C    202.103.2.0/24 is directly connected, Ethernet0/0
+C    202.103.1.0/24 is directly connected, Ethernet0/1
+R    192.168.1.0/24 [120/1] via 202.103.2.2, 00:02:23, Ethernet0/0
+R1#
+R2
+show ip route
+Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+C    202.103.2.0/24 is directly connected, Ethernet0/0
+R    202.103.1.0/24 [120/1] via 202.103.2.1, 00:02:37, Ethernet0/0
+C    192.168.1.0/24 is directly connected, Ethernet0/1
+R2#
+
+2026-11-17T17:38:13+08:00 learned routes absent (False, False)
+R1
+show ip route
+Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+C    202.103.2.0/24 is directly connected, Ethernet0/0
+C    202.103.1.0/24 is directly connected, Ethernet0/1
+R    192.168.1.0/24 [120/1] via 202.103.2.2, 00:02:38, Ethernet0/0
+R1#
+R2
+show ip route
+Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+C    202.103.2.0/24 is directly connected, Ethernet0/0
+R    202.103.1.0/24 [120/1] via 202.103.2.1, 00:02:54, Ethernet0/0
+C    192.168.1.0/24 is directly connected, Ethernet0/1
+R2#
+
+2026-11-17T17:38:31+08:00 learned routes absent (False, False)
+R1
+show ip route
+Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+C    202.103.2.0/24 is directly connected, Ethernet0/0
+C    202.103.1.0/24 is directly connected, Ethernet0/1
+R    192.168.1.0/24 [120/1] via 202.103.2.2, 00:02:53, Ethernet0/0
+R1#
+R2
+show ip route
+Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+C    202.103.2.0/24 is directly connected, Ethernet0/0
+R    202.103.1.0/24 is possibly down, routing via 202.103.2.1, Ethernet0/0
+C    192.168.1.0/24 is directly connected, Ethernet0/1
+R2#
+
+2026-11-17T17:38:49+08:00 learned routes absent (False, False)
+R1
+show ip route
+Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+C    202.103.2.0/24 is directly connected, Ethernet0/0
+C    202.103.1.0/24 is directly connected, Ethernet0/1
+R    192.168.1.0/24 is possibly down, routing via 202.103.2.2, Ethernet0/0
+R1#
+R2
+show ip route
+Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+C    202.103.2.0/24 is directly connected, Ethernet0/0
+R    202.103.1.0/24 is possibly down, routing via 202.103.2.1, Ethernet0/0
+C    192.168.1.0/24 is directly connected, Ethernet0/1
+R2#
+
+2026-11-17T17:39:06+08:00 learned routes absent (False, False)
+R1
+show ip route
+Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+C    202.103.2.0/24 is directly connected, Ethernet0/0
+C    202.103.1.0/24 is directly connected, Ethernet0/1
+R    192.168.1.0/24 is possibly down, routing via 202.103.2.2, Ethernet0/0
+R1#
+R2
+show ip route
+Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+C    202.103.2.0/24 is directly connected, Ethernet0/0
+R    202.103.1.0/24 is possibly down, routing via 202.103.2.1, Ethernet0/0
+C    192.168.1.0/24 is directly connected, Ethernet0/1
+R2#
+
+2026-11-17T17:39:24+08:00 learned routes absent (False, False)
+R1
+show ip route
+Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+C    202.103.2.0/24 is directly connected, Ethernet0/0
+C    202.103.1.0/24 is directly connected, Ethernet0/1
+R    192.168.1.0/24 is possibly down, routing via 202.103.2.2, Ethernet0/0
+R1#
+R2
+show ip route
+Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+C    202.103.2.0/24 is directly connected, Ethernet0/0
+R    202.103.1.0/24 is possibly down, routing via 202.103.2.1, Ethernet0/0
+C    192.168.1.0/24 is directly connected, Ethernet0/1
+R2#
+
+2026-11-17T17:39:42+08:00 learned routes absent (False, True)
+R1
+show ip route
+Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+C    202.103.2.0/24 is directly connected, Ethernet0/0
+C    202.103.1.0/24 is directly connected, Ethernet0/1
+R    192.168.1.0/24 is possibly down, routing via 202.103.2.2, Ethernet0/0
+R1#
+R2
+show ip route
+Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+C    202.103.2.0/24 is directly connected, Ethernet0/0
+C    192.168.1.0/24 is directly connected, Ethernet0/1
+R2#

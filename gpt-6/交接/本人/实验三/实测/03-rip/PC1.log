@@ -1,0 +1,69 @@
+
+[2026-11-17T18:01:52+08:00] PC1> boot console
+
+Welcome to Virtual PC Simulator, version 0.6.2
+Dedicated to Daling.
+Build time: Apr 10 2019 02:42:20
+Copyright (c) 2007-2014, Paul Meng (mirnshi@gmail.com)
+All rights reserved.
+
+VPCS is free software, distributed under the terms of the "BSD" licence.
+Source code and license can be found at vpcs.sf.net.
+For more information, please visit wiki.freecode.com.cn.
+
+Press '?' to get help.
+
+VPCS> 
+
+[2026-11-17T18:01:52+08:00] PC1> set pcname PC1
+
+VPCS> 
+
+[2026-11-17T18:02:00+08:00] PC1> ip 202.103.1.2/24 202.103.1.1
+ip 202.103.1.2/24 202.103.1.1
+Checking for duplicate address...
+PC1 : 202.103.1.2 255.255.255.0 gateway 202.103.1.1
+
+VPCS> 
+
+[2026-11-17T18:02:34+08:00] PC1> ping 202.103.1.1 -c 2
+ping 202.103.1.1 -c 2
+202.103.1.1 icmp_seq=1 timeout
+84 bytes from 202.103.1.1 icmp_seq=2 ttl=255 time=15.855 ms
+
+VPCS> 
+
+[2026-11-17T18:02:38+08:00] PC1> ping 192.168.1.2 -c 2
+ping 192.168.1.2 -c 2
+192.168.1.2 icmp_seq=1 timeout
+84 bytes from 192.168.1.2 icmp_seq=2 ttl=62 time=60.946 ms
+
+VPCS> 
+
+[2026-11-17T18:02:44+08:00] PC1> ping 192.168.1.2 -c 2
+ping 192.168.1.2 -c 2
+84 bytes from 192.168.1.2 icmp_seq=1 ttl=62 time=61.395 ms
+84 bytes from 192.168.1.2 icmp_seq=2 ttl=62 time=62.348 ms
+
+VPCS> 
+
+[2026-11-17T18:02:52+08:00] PC1> show ip
+show ip
+
+NAME        : VPCS[1]
+IP/MASK     : 202.103.1.2/24
+GATEWAY     : 202.103.1.1
+DNS         : 
+MAC         : 00:50:79:66:68:00
+LPORT       : 20038
+RHOST:PORT  : 127.0.0.1:20039
+MTU:        : 1500
+
+VPCS> 
+
+[2026-11-17T18:02:52+08:00] PC1> save
+save
+Saving startup configuration to startup.vpc
+.  done
+
+VPCS> 

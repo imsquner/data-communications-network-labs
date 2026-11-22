@@ -1,0 +1,16 @@
+# The format of this file is documented in the dhcpd.leases(5) manual page.
+# This lease file was written by isc-dhcp-4.3.1
+
+server-duid "\000\001\000\0012\217\265\327\000\014)U\261\003";
+
+lease 192.168.77.21 {
+  starts 3 2026/11/18 01:03:37;
+  ends 3 2026/11/18 02:03:37;
+  cltt 3 2026/11/18 01:03:37;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 00:0c:29:ed:66:f6;
+  uid "\001\000\014)\355f\366";
+  client-hostname "netlab-xp";
+}

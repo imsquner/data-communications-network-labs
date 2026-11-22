@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.lck
+*.part
+*.iso
+*.vmdk
+*.vmem
+*.vmss
+*.vmsn
+~$*
+来宾凭据.md
+邮件原始证据/
+来宾工作副本/

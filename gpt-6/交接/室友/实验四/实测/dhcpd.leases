@@ -1,0 +1,15 @@
+# The format of this file is documented in the dhcpd.leases(5) manual page.
+# This lease file was written by isc-dhcp-4.3.1
+
+lease 192.168.77.61 {
+  starts 3 2026/11/18 01:38:52;
+  ends 3 2026/11/18 02:38:52;
+  tstp 3 2026/11/18 02:38:52;
+  cltt 3 2026/11/18 01:38:52;
+  binding state active;
+  next binding state free;
+  rewind binding state free;
+  hardware ethernet 00:0c:29:ed:66:f6;
+  uid "\001\000\014)\355f\366";
+  client-hostname "netlab-xp";
+}

@@ -1,0 +1,27 @@
+-- Logs begin at Sat 2026-11-07 21:09:59 UTC, end at Wed 2026-11-18 00:49:00 UTC. --
+Nov 18 00:48:55 netlab-ubuntu systemd[1]: Started /usr/bin/timeout 50 /usr/sbin/tcpdump -l -nn -i enp0s19 arp or tcp port 18080.
+Nov 18 00:48:55 netlab-ubuntu timeout[1706]: tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+Nov 18 00:48:55 netlab-ubuntu timeout[1706]: listening on enp0s19, link-type EN10MB (Ethernet), capture size 262144 bytes
+Nov 18 00:48:56 netlab-ubuntu timeout[1706]: 00:48:55.888424 ARP, Request who-has 192.168.174.2 tell 192.168.174.1, length 46
+Nov 18 00:48:56 netlab-ubuntu timeout[1706]: 00:48:56.792121 ARP, Request who-has 192.168.174.2 tell 192.168.174.1, length 46
+Nov 18 00:48:57 netlab-ubuntu timeout[1706]: 00:48:57.801872 ARP, Request who-has 192.168.174.2 tell 192.168.174.1, length 46
+Nov 18 00:48:59 netlab-ubuntu timeout[1706]: 00:48:59.880786 IP 192.168.174.1.2975 > 192.168.174.129.18080: Flags [S], seq 171119250, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+Nov 18 00:48:59 netlab-ubuntu timeout[1706]: 00:48:59.880811 IP 192.168.174.129.18080 > 192.168.174.1.2975: Flags [S.], seq 2581337051, ack 171119251, win 64240, options [mss 1460,nop,nop,sackOK,nop,wscale 7], length 0
+Nov 18 00:48:59 netlab-ubuntu timeout[1706]: 00:48:59.880935 IP 192.168.174.1.2975 > 192.168.174.129.18080: Flags [.], ack 1, win 255, length 0
+Nov 18 00:48:59 netlab-ubuntu timeout[1706]: 00:48:59.904778 IP 192.168.174.1.2975 > 192.168.174.129.18080: Flags [P.], seq 1:95, ack 1, win 255, length 94
+Nov 18 00:48:59 netlab-ubuntu timeout[1706]: 00:48:59.904812 IP 192.168.174.129.18080 > 192.168.174.1.2975: Flags [.], ack 95, win 502, length 0
+Nov 18 00:48:59 netlab-ubuntu timeout[1706]: 00:48:59.905284 IP 192.168.174.129.18080 > 192.168.174.1.2975: Flags [P.], seq 1:186, ack 95, win 502, length 185
+Nov 18 00:48:59 netlab-ubuntu timeout[1706]: 00:48:59.905430 IP 192.168.174.129.18080 > 192.168.174.1.2975: Flags [FP.], seq 186:289, ack 95, win 502, length 103
+Nov 18 00:48:59 netlab-ubuntu timeout[1706]: 00:48:59.905503 IP 192.168.174.1.2975 > 192.168.174.129.18080: Flags [.], ack 290, win 254, length 0
+Nov 18 00:48:59 netlab-ubuntu timeout[1706]: 00:48:59.905697 IP 192.168.174.1.2975 > 192.168.174.129.18080: Flags [F.], seq 95, ack 290, win 254, length 0
+Nov 18 00:48:59 netlab-ubuntu timeout[1706]: 00:48:59.905708 IP 192.168.174.129.18080 > 192.168.174.1.2975: Flags [.], ack 96, win 502, length 0
+Nov 18 00:48:59 netlab-ubuntu timeout[1706]: 00:48:59.919744 IP 192.168.174.1.2976 > 192.168.174.129.18080: Flags [S], seq 1538221800, win 65535, options [mss 1460,nop,wscale 8,nop,nop,sackOK], length 0
+Nov 18 00:48:59 netlab-ubuntu timeout[1706]: 00:48:59.919768 IP 192.168.174.129.18080 > 192.168.174.1.2976: Flags [S.], seq 1994485500, ack 1538221801, win 64240, options [mss 1460,nop,nop,sackOK,nop,wscale 7], length 0
+Nov 18 00:48:59 netlab-ubuntu timeout[1706]: 00:48:59.920037 IP 192.168.174.1.2976 > 192.168.174.129.18080: Flags [.], ack 1, win 255, length 0
+Nov 18 00:48:59 netlab-ubuntu timeout[1706]: 00:48:59.920059 IP 192.168.174.1.2976 > 192.168.174.129.18080: Flags [P.], seq 1:96, ack 1, win 255, length 95
+Nov 18 00:48:59 netlab-ubuntu timeout[1706]: 00:48:59.920112 IP 192.168.174.129.18080 > 192.168.174.1.2976: Flags [.], ack 96, win 502, length 0
+Nov 18 00:48:59 netlab-ubuntu timeout[1706]: 00:48:59.920650 IP 192.168.174.129.18080 > 192.168.174.1.2976: Flags [P.], seq 1:186, ack 96, win 502, length 185
+Nov 18 00:48:59 netlab-ubuntu timeout[1706]: 00:48:59.920777 IP 192.168.174.129.18080 > 192.168.174.1.2976: Flags [FP.], seq 186:291, ack 96, win 502, length 105
+Nov 18 00:48:59 netlab-ubuntu timeout[1706]: 00:48:59.920847 IP 192.168.174.1.2976 > 192.168.174.129.18080: Flags [.], ack 292, win 254, length 0
+Nov 18 00:48:59 netlab-ubuntu timeout[1706]: 00:48:59.921065 IP 192.168.174.1.2976 > 192.168.174.129.18080: Flags [F.], seq 96, ack 292, win 254, length 0
+Nov 18 00:48:59 netlab-ubuntu timeout[1706]: 00:48:59.921072 IP 192.168.174.129.18080 > 192.168.174.1.2976: Flags [.], ack 97, win 502, length 0

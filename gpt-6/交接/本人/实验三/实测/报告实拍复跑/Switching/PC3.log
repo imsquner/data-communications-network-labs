@@ -1,0 +1,47 @@
+
+[2026-11-17T18:28:59+08:00] PC3> boot console
+
+Welcome to Virtual PC Simulator, version 0.6.2
+Dedicated to Daling.
+Build time: Apr 10 2019 02:42:20
+Copyright (c) 2007-2014, Paul Meng (mirnshi@gmail.com)
+All rights reserved.
+
+VPCS is free software, distributed under the terms of the "BSD" licence.
+Source code and license can be found at vpcs.sf.net.
+For more information, please visit wiki.freecode.com.cn.
+
+Press '?' to get help.
+
+Executing the startup file
+
+
+Checking for duplicate address...
+PC1 : 192.168.30.21 255.255.255.0
+
+VPCS> 
+
+[2026-11-17T18:28:59+08:00] PC3> set pcname PC3
+
+VPCS> 
+
+[2026-11-17T18:29:11+08:00] PC3> ip 192.168.30.21/24
+ip 192.168.30.21/24
+Checking for duplicate address...
+PC1 : 192.168.30.21 255.255.255.0
+
+VPCS> 
+
+[2026-11-17T18:30:03+08:00] PC3> ip 192.168.30.21/25
+ip 192.168.30.21/25
+Checking for duplicate address...
+PC1 : 192.168.30.21 255.255.255.128
+
+VPCS> 
+
+[2026-11-17T18:30:20+08:00] PC3> ip 192.168.30.21/24
+ip 192.168.30.21/24
+Checking for duplicate address...
+PC1 : 192.168.30.21 255.255.255.0
+
+VPCS> 

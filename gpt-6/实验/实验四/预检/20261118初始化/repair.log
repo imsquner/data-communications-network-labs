@@ -1,0 +1,11 @@
+lo               UNKNOWN        127.0.0.1/8 
+enp0s17          UP             192.168.77.2/24 
+enp0s19          UP             192.168.174.129/24 
+default via 192.168.174.2 dev enp0s19 proto dhcp src 192.168.174.129 metric 100 
+192.168.77.0/24 dev enp0s17 proto kernel scope link src 192.168.77.2 
+192.168.174.0/24 dev enp0s19 proto kernel scope link src 192.168.174.129 
+192.168.174.2 dev enp0s19 proto dhcp scope link src 192.168.174.129 metric 100 
+net.ipv4.ip_forward = 0
+91.189.91.82    STREAM archive.ubuntu.com
+Ubuntu archive HTTP 200
+/usr/sbin/tcpdump

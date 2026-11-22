@@ -1,0 +1,65 @@
+出场序号	Word 内路径	图注	提取图	SHA-256	同哈希素材
+1	word/media/image1.jpeg	图 1-1  CRC 生成流程	报告插图/01.jpeg	aa5c021eb76fbdb8d7a327774b7bf12ed0b3aa32fc933e2017f5f61412adb9e3	
+2	word/media/image2.png	图 1-2  CRC 校验流程	报告插图/02.png	f639aad0056bfaafe7a528fee058c2d1c104a79493ec220f786fe26a6d169553	
+3	word/media/image3.png	图 1-3  海明码生成流程	报告插图/03.png	5d9e31e7e04f18befc2beade0369343ba7c8e90563dc7fbaffd444792db17bc8	
+4	word/media/image4.png	图 1-4  海明码判错与纠错流程	报告插图/04.png	283820dd2f0cd93f261b3fd5a12eeb5872790ad60c7a34a5793c67d55649fdc1	
+5	word/media/image5.png	图 1-5  批量试验主流程	报告插图/05.png	84cb7f3a3c87ca26cf4f3bc0466e870309158e80ba13bd87db9f29f08be6591e	
+6	word/media/image6.png	图 1-6  编译、自检和复跑校验记录摘录	报告插图/06.png	79b597fd97e50a0c02960e2ffc6b757ec6829ad1e454acd371d327d9ca62393c	
+7	word/media/image7.png	图 1-7  CRC 手算及逐位注错记录摘录	报告插图/07.png	e6e9118689eb04c2527c5e9d848acaf0d4897213d0734919a127b5b7ea1741a6	交接/本人/实验一/验收/01-编译与复跑校验.png; 实验/实验一/验收/01-编译与复跑校验.png
+8	word/media/image8.png	图 1-8  海明码样例与 CRC 漏检记录摘录	报告插图/08.png	19b4dc049ef4be54c9fd2241513fd5b9a748eebf5753ad6039d83dd627aeca6c	交接/本人/实验一/验收/02-CRC逐位注错.png; 实验/实验一/验收/02-CRC逐位注错.png
+9	word/media/image9.png	图 2-1  11 月 18 日公网普通与组合参数 ping	报告插图/09.png	8d5094865b3cb5d0e59f1f2670f4c0193098d629efffb7474e0802d24ea88954	交接/本人/实验一/验收/03-海明码与CRC漏检样例.png; 实验/实验一/验收/03-海明码与CRC漏检样例.png
+10	word/media/image10.png	图 2-2  宿主持续 ping 公网	报告插图/10.png	12520ed8a79f4f0bc7e5ff93f1b00b56bfcd06bfdfed9abc8a9a6c55593d0e1a	
+11	word/media/image11.png	图 2-3  VMnet8 实测普通与 56 字节 ping	报告插图/11.png	d7cbb2b88bb00bfeb061ba09dd1f024cb1cce1092397a487bfe9a49bea5a2775	
+12	word/media/image12.png	图 2-4  VMnet8 持续 ping	报告插图/12.png	1104de2d6bda4a3dd4703b31daadd58b7cc1996e8536cc0bfa0555b0a96d17d7	
+13	word/media/image13.png	图 2-5  XP 在 VMnet1 上释放地址与续租的原始输出摘录	报告插图/13.png	512fd05d562e8a93fdbea08a8183a27b89959898752808f8506622eb05d3e5a9	
+14	word/media/image14.png	图 2-6  Windows 11 宿主补拍的 VMnet8 配置	报告插图/14.png	7e3aabb55c219cf688a42c2803f555622a0b54d8658aa52da76014ac32b32ed8	交接/本人/实验二/验收/图03-IP配置释放续租.png; 实验/实验二/验收/图03-IP配置释放续租.png
+15	word/media/image15.png	图 2-7  XP 的 netstat 协议计数和关联程序原始输出摘录	报告插图/15.png	e451af382fb5f23e21c73d315da0c0ae90603b405bafdc60d47529dafbeffd9c	
+16	word/media/image16.png	图 2-8  Windows 11 宿主补拍的 netstat 接口统计	报告插图/16.png	33e88f285cbfe34dd6d509551802164145219af6db22b06d1ddd8bc3f796ea44	交接/本人/实验二/验收/图04-Netstat统计与进程.png; 实验/实验二/验收/图04-Netstat统计与进程.png
+17	word/media/image17.png	图 2-9  Windows 11 宿主补拍的 netstat IPv4 计数	报告插图/17.png	f9c09f541b56a1774fc1a6e530b1f5317bb70300d604cdba311ff8ced9c10538	
+18	word/media/image18.png	图 2-10  补测中的 Record Route	报告插图/18.png	7fae2a1cad4e11a6c9e78abd9e561d22f906c4d2f344196a472f7cdad38c61f5	
+19	word/media/image19.png	图 2-11  同目标 tracert 补测	报告插图/19.png	67a90a9d44d3311eadebd12d8d545c1f484c396a7b26d348e999f522c870e2b3	
+20	word/media/image20.png	图 2-12  文档保留地址的 8 跳观察	报告插图/20.png	5d28680e006f7cf639733ea530e61f40873c1e775477a73cd2e75a71b7e38e7b	
+21	word/media/image21.png	图 2-13  Wireshark 中的 DHCP 事务	报告插图/21.png	036da83d96dda44b175fbf8aab16cdc78f05cda5817a908a3f75a277facda8b6	
+22	word/media/image22.png	图 2-14  第 21 帧 IPv4 首部展开	报告插图/22.png	62c1d95f233c20c0a205b59aef4ad78f602c2105fd15a748b550896d0f57d1b4	交接/本人/实验二/验收/图06-DHCP事务.png; 实验/实验二/验收/图06-DHCP事务.png
+23	word/media/image23.png	图 2-15  第 29 帧 IPv4 首片	报告插图/23.png	0832707b39f08f0618b1bd198f7414080fd9da43f6404401e32363aa08fcfb98	交接/本人/实验二/验收/图07-首个ICMP请求.png; 实验/实验二/验收/图07-首个ICMP请求.png
+24	word/media/image24.png	图 2-16  第 32 帧末片及重组	报告插图/24.png	07b55224f615c9fb8be6d96612709fb69a2e574b1bebb4589d90a1ef120a7206	交接/本人/实验二/验收/图08-IPv4首片.png; 实验/实验二/验收/图08-IPv4首片.png
+25	word/media/image25.png	图 3-1  交换项目实拍拓扑	报告插图/25.png	6e46635fcda4250c65ddf58acd7eb89894a2e89ee2c79c02834467a5072970fe	交接/本人/实验二/验收/图09-IPv4尾片与重组.png; 实验/实验二/验收/图09-IPv4尾片与重组.png
+26	word/media/image26.jpg	图 3-2  同一网段连通性	报告插图/26.jpg	b2228d10cc29ceae971de29a1457039509640c74c8cae4dc2911219d8cdfc7ba	交接/本人/实验三/截图/01-switch-拓扑.jpg
+27	word/media/image27.jpg	图 3-3  PC4 修改网段后的对照	报告插图/27.jpg	1bf6645b594204a9029fd6759e898fb8d5b98869378a52f9ef233cfb2d1fed1a	交接/本人/实验三/截图/01-switch-same-subnet.jpg
+28	word/media/image28.jpg	图 3-4  两个 /25 子网的连通矩阵	报告插图/28.jpg	80b61f399df933f060ec68a225e044a1b28764225ce86e0cd5353d6857dc60b7	交接/本人/实验三/截图/02-switch-different-subnet.jpg
+29	word/media/image29.jpg	图 3-5  SW1 端口和 VLAN 成员	报告插图/29.jpg	7368b9d92f71656294c363f1951100314473df9a94bf71e7c1168c35dcd78b32	交接/本人/实验三/截图/03-switch-two-subnets.jpg
+30	word/media/image30.jpg	图 3-6  SW2 端口和 VLAN 成员	报告插图/30.jpg	c5d93c63536f5cb98e130db72fbb0283ae3c4b46adaaf8e147ecc640c51cd157	交接/本人/实验三/截图/14-vlan-ports-SW1.jpg
+31	word/media/image31.jpg	图 3-7  VLAN 200 与 300 的跨交换机对照	报告插图/31.jpg	083902d357f67ee6e2edf71569cd72e227451eb3c02d4e2af9c354c6631dd7c0	交接/本人/实验三/截图/14-vlan-ports-SW2.jpg
+32	word/media/image32.jpg	图 3-8  两路由器及两端终端	报告插图/32.jpg	b812c7c0484c00f37c808e90b1dd2699c6e7775141ef0580f461a04496997fec	交接/本人/实验三/截图/05-vlan-connectivity.jpg
+33	word/media/image33.jpg	图 3-9  静态路由配置前的直连基线	报告插图/33.jpg	f2761a0434e54ed471807f1cdc8a11ca480f82240a1b1d36de1b13d34685b5fe	交接/室友/实验三/截图/03-rip-拓扑.jpg; 交接/室友/实验三/截图/04-ospf-拓扑.jpg; 交接/本人/实验三/截图/02-static-拓扑.jpg
+34	word/media/image34.jpg	图 3-10  只在 R1 配置时的路由和探测	报告插图/34.jpg	13f9d0c7ca6ed8fc45ebf86b8079c3cf9c8481ad37fcdf1679a899cc069e792f	交接/本人/实验三/截图/06-static-connected.jpg
+35	word/media/image35.jpg	图 3-11  双边静态路由及连通结果	报告插图/35.jpg	618799dbddeeb381fd48ad280620e3bb79d2998fafafbb5f19872b964ce34eee	交接/本人/实验三/截图/07-static-one-side.jpg
+36	word/media/image36.jpg	图 3-12  RIP 项目拓扑	报告插图/36.jpg	426189a36d8bfd4f5b42e838615ab83b480700f41ead582e6ea56e562a51bdb3	交接/本人/实验三/截图/08-static-two-sides.jpg
+37	word/media/image37.jpg	图 3-13  RIPv2 收敛后两端路由与连通	报告插图/37.jpg	2adf4260732e6633c54aa98bb8acfc90a2f173bd97446e98fc2b053392530d61	交接/室友/实验三/截图/02-static-拓扑.jpg; 交接/本人/实验三/截图/03-rip-拓扑.jpg; 交接/本人/实验三/截图/04-ospf-拓扑.jpg
+38	word/media/image38.jpg	图 3-14  删除两路由器之间的互联	报告插图/38.jpg	cb2b69f1085d365939e6f1998fb32cb68422bf4e8e9b99e412b3f5ac5335c5a0	交接/本人/实验三/截图/09-rip-before-disconnect.jpg
+39	word/media/image39.jpg	图 3-15  断链后两端撤路，探测返回目标不可达	报告插图/39.jpg	23f479c2120e5d832030ce9c64d10da8f6ff056075a9265940737ca81d74afb9	交接/本人/实验三/截图/10-rip-cut-topology.jpg
+40	word/media/image40.jpg	图 3-16  在线重接后两端路由和双向 ping	报告插图/40.jpg	362b0a6ba03f6c2b3e29351161afd92c752806caad25740e6c330f9a727c04a3	交接/本人/实验三/截图/10-rip-withdrawn-tables.jpg
+41	word/media/image41.jpg	图 3-17  R1 的 RIPv2 更新调试	报告插图/41.jpg	d69462adbebf0e7b01c41d23c185d525503df2719ae15bea62d5e6942f19e075	交接/本人/实验三/截图/11-rip-restored-tables.jpg
+42	word/media/image42.jpg	图 3-18  R2 的 RIPv2 更新调试	报告插图/42.jpg	0710cf715aacdd3aea0b69767bfc37a14297286d6b8a41ecbd9ea3d123d1bbad	交接/本人/实验三/截图/15-rip-debug-R1.jpg
+43	word/media/image43.jpg	图 3-19  OSPF 项目拓扑	报告插图/43.jpg	3cd3b6291971c09c24f9678a03843198dcda23ed42357738a044000cc8c10f33	交接/本人/实验三/截图/15-rip-debug-R2.jpg
+44	word/media/image44.jpg	图 3-20  R1 的 OSPF 邻居及路由	报告插图/44.jpg	f7f42cd2932a8ec1d27d659a88855e5f820f2cca364359f54f4b481efee1df23	交接/本人/实验三/截图/12-ospf-R1.jpg
+45	word/media/image45.jpg	图 3-21  R2 的 OSPF 邻居及路由	报告插图/45.jpg	ffbf3f259feebb7b67946dc1724d13b397b529234d0dbba4d9ebca619a60168c	交接/本人/实验三/截图/12-ospf-R2.jpg
+46	word/media/image46.jpg	图 3-22  OSPF 配置后的双向探测	报告插图/46.jpg	0aaf26a4c670d15a393d7114296b45d19436ad907a4ce3a5956e56a5602a6365	交接/本人/实验三/截图/13-ospf-connectivity.jpg
+47	word/media/image47.png	图 4-1  Ubuntu 的版本及 enp0s17 私网接口	报告插图/47.png	3112263240fd5d920912291eba7923ad3b184e68e43b4da79f26966414629026	交接/本人/实验四/截图/E01-Ubuntu私有接口.png
+48	word/media/image48.png	图 4-2  ISC DHCP 构建及版本	报告插图/48.png	45c568602301170a23841ae8e56fdd5992cc85f15bc276e1b6fb4ded92fb8c1d	交接/本人/实验四/截图/D01-ISC源码构建.png
+49	word/media/image49.png	图 4-3  地址池、租期以及配置检查	报告插图/49.png	a723ddec8b4aeb07e3703dfaee39d07f3e272c8cd5dd0f54802e22f9bcb0b866	交接/本人/实验四/截图/D02-DHCP配置检查.png
+50	word/media/image50.png	图 4-4  私网 DHCP 服务日志	报告插图/50.png	f8fbb558b5bdb78de2e84c6dba86f9c2491791495c5728e4a2756940ff8ff74b	交接/本人/实验四/截图/D03-DHCP接口与服务日志.png
+51	word/media/image51.png	图 4-5  XP 连接明细及租约起止	报告插图/51.png	9be3436c6fe912849e14ae15723ba0b6f722852c61292d34cf1b72143d84fc70	交接/本人/实验四/截图/D04-XP网络连接租约明细.png
+52	word/media/image52.png	图 4-6  Wireshark 中的 DORA 和 ACK 租期	报告插图/52.png	aa48227599b757082ade36d432724c9e126a8cd595b048dddf712877c9a1a14c	交接/本人/实验四/截图/D05-Wireshark-DORA和ACK.png
+53	word/media/image53.png	图 4-7  XP 发起的四组 ICMP 往返	报告插图/53.png	ba92cbac33c282e77f064fea9e2365802436a3d672609390b3ecb87d93d9c42b	交接/本人/实验四/截图/D06-XP发起ICMP往返抓包.png
+54	word/media/image54.png	图 4-8  Apache 构建与版本	报告插图/54.png	7de158566f96eb429e2ac91e7d07dbbba4b6f36f685d50ebb967a962b71b3b7c	交接/本人/实验四/截图/W01-Apache源码构建.png
+55	word/media/image55.png	图 4-9  A 轮 Apache 配置及 18080 端口监听，18081 为另一轮端口	报告插图/55.png	70f3cf8586ebc45483dd175ae66903e7d788f547fe96328893d24ab76c844f93	交接/本人/实验四/截图/W02-Apache配置与监听.png
+56	word/media/image56.png	图 4-10  宿主 Edge 访问 welcome.htm	报告插图/56.png	060715f5cac13e967094c0d4c0c5dde74c213116c2f74c3bfe90978d960975d8	交接/本人/实验四/截图/W03-Edge-HTM.png
+57	word/media/image57.png	图 4-11  宿主 Edge 访问 status.html	报告插图/57.png	a578dcd0b7e3beef2f86ace058533b7d8d85d855ba9c11aaaf000ab763653005	交接/本人/实验四/截图/W04-Edge-HTML.png
+58	word/media/image58.png	图 4-12  A 轮访问日志中的 HTM、HTML 请求及 HTTP 200	报告插图/58.png	25c1a001308f9d96af97f5c420ef7329ce6e1fafd3e14d43000cc3284b52036c	交接/本人/实验四/截图/W05-Apache访问日志.png
+59	word/media/image59.png	图 4-13  Postfix 安装及版本	报告插图/59.png	f12bd6e402d202dfa65bb196b368bd0e85057bd0562de64508aa3b6efbbd8917	交接/本人/实验四/截图/M01-Postfix安装与版本.png
+60	word/media/image60.png	图 4-14  生效配置和本机监听	报告插图/60.png	8c5e90121b35af1fb6fe65d522b7d6b75282f381675c9ed7b4661614377dbd4b	交接/室友/实验四/截图/M02-Postfix配置与监听.png; 交接/本人/实验四/截图/M02-Postfix配置与监听.png
+61	word/media/image61.png	图 4-15  本地去程与返程投递	报告插图/61.png	15186f88798671e63386abefb97e7495a3823bdec5387d5f385bd633fd9be965	交接/本人/实验四/截图/M03-Postfix本地投递.png
+62	word/media/image62.png	图 4-16  SMTP 中继接收及队列状态	报告插图/62.png	4121d065548d772557cb9ce84e127ef1f09aa054057d2b86f118e9af1c10a427	交接/本人/实验四/截图/M04-Postfix外发回执.png
+63	word/media/image63.png	图 4-17  校邮打开本轮原信	报告插图/63.png	a737222e0d9215298730510255fc6ac1ac44df8f31361de4b1197ab4d68ef7ce	交接/本人/实验四/截图/M05-校邮收到测试信.png
+64	word/media/image64.png	图 4-18  Ubuntu 本地回信投递	报告插图/64.png	518d400862c8b8353eb90bd0dbeb5990a58e589d3697cff924cd751c2f8a4b09	交接/本人/实验四/截图/M06-Ubuntu收到公网回信.png

@@ -1,0 +1,31 @@
+2026-11-17T17:33:54+08:00 node R1 dynamips NM-4E console=5000
+2026-11-17T17:33:57+08:00 node R2 dynamips NM-4E console=5001
+2026-11-17T17:33:57+08:00 node PC1 vpcs  console=5002
+2026-11-17T17:33:57+08:00 node PC2 vpcs  console=5005
+2026-11-17T17:34:01+08:00 link PC1:Ethernet0 <-> R1:Ethernet0/1 941d6e23-d37f-4cd9-a0be-af773afa863d
+2026-11-17T17:34:05+08:00 link R1:Ethernet0/0 <-> R2:Ethernet0/0 170488d8-dd17-4f08-9f6e-7741fe797e4d
+2026-11-17T17:34:05+08:00 link R2:Ethernet0/1 <-> PC2:Ethernet0 ce1cbc13-f325-4b30-b709-1226a62103f1
+2026-11-17T17:34:14+08:00 all nodes started
+2026-11-17T17:34:59+08:00 direct: PASS
+2026-11-17T17:35:12+08:00 learned: PASS
+2026-11-17T17:35:12+08:00 R1 suspend: started
+2026-11-17T17:35:12+08:00 R2 suspend: started
+2026-11-17T17:35:12+08:00 physical topology link deleted while both routers suspended
+2026-11-17T17:35:12+08:00 R1 resume: suspended
+2026-11-17T17:35:13+08:00 R2 resume: suspended
+2026-11-17T17:35:15+08:00 waiting for RIP withdrawal, absent=(False, False)
+2026-11-17T17:35:33+08:00 waiting for RIP withdrawal, absent=(False, False)
+2026-11-17T17:35:51+08:00 waiting for RIP withdrawal, absent=(False, False)
+2026-11-17T17:36:09+08:00 waiting for RIP withdrawal, absent=(False, False)
+2026-11-17T17:36:26+08:00 waiting for RIP withdrawal, absent=(False, False)
+2026-11-17T17:36:44+08:00 waiting for RIP withdrawal, absent=(False, False)
+2026-11-17T17:37:02+08:00 waiting for RIP withdrawal, absent=(False, False)
+2026-11-17T17:37:20+08:00 waiting for RIP withdrawal, absent=(False, False)
+2026-11-17T17:37:37+08:00 waiting for RIP withdrawal, absent=(False, False)
+2026-11-17T17:37:55+08:00 waiting for RIP withdrawal, absent=(False, False)
+2026-11-17T17:38:13+08:00 waiting for RIP withdrawal, absent=(False, False)
+2026-11-17T17:38:31+08:00 waiting for RIP withdrawal, absent=(False, False)
+2026-11-17T17:38:49+08:00 waiting for RIP withdrawal, absent=(False, False)
+2026-11-17T17:39:06+08:00 waiting for RIP withdrawal, absent=(False, False)
+2026-11-17T17:39:24+08:00 waiting for RIP withdrawal, absent=(False, False)
+2026-11-17T17:39:43+08:00 all nodes stopped

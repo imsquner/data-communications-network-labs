@@ -1,0 +1,83 @@
+
+[2026-11-17T17:28:59+08:00] PC2> boot console
+
+Welcome to Virtual PC Simulator, version 0.6.2
+Dedicated to Daling.
+Build time: Apr 10 2019 02:42:20
+Copyright (c) 2007-2014, Paul Meng (mirnshi@gmail.com)
+All rights reserved.
+
+VPCS is free software, distributed under the terms of the "BSD" licence.
+Source code and license can be found at vpcs.sf.net.
+For more information, please visit wiki.freecode.com.cn.
+
+Press '?' to get help.
+
+VPCS> 
+
+[2026-11-17T17:28:59+08:00] PC2> set pcname PC2
+
+VPCS> 
+
+[2026-11-17T17:29:09+08:00] PC2> ip 192.168.1.2/24 192.168.1.1
+ip 192.168.1.2/24 192.168.1.1
+Checking for duplicate address...
+PC1 : 192.168.1.2 255.255.255.0 gateway 192.168.1.1
+
+VPCS> 
+
+[2026-11-17T17:29:23+08:00] PC2> ping 202.103.2.2 -c 2
+ping 202.103.2.2 -c 2
+202.103.2.2 icmp_seq=1 timeout
+84 bytes from 202.103.2.2 icmp_seq=2 ttl=255 time=15.309 ms
+
+VPCS> 
+
+[2026-11-17T17:29:25+08:00] PC2> ping 192.168.1.1 -c 2
+ping 192.168.1.1 -c 2
+84 bytes from 192.168.1.1 icmp_seq=1 ttl=255 time=15.533 ms
+84 bytes from 192.168.1.1 icmp_seq=2 ttl=255 time=15.673 ms
+
+VPCS> 
+
+[2026-11-17T17:29:49+08:00] PC2> ping 202.103.1.2 -c 2
+ping 202.103.1.2 -c 2
+84 bytes from 202.103.1.2 icmp_seq=1 ttl=62 time=60.782 ms
+84 bytes from 202.103.1.2 icmp_seq=2 ttl=62 time=46.577 ms
+
+VPCS> 
+
+[2026-11-17T17:29:58+08:00] PC2> ping 202.103.2.2 -c 2
+ping 202.103.2.2 -c 2
+84 bytes from 202.103.2.2 icmp_seq=1 ttl=255 time=14.993 ms
+84 bytes from 202.103.2.2 icmp_seq=2 ttl=255 time=15.431 ms
+
+VPCS> 
+
+[2026-11-17T17:30:00+08:00] PC2> ping 192.168.1.1 -c 2
+ping 192.168.1.1 -c 2
+84 bytes from 192.168.1.1 icmp_seq=1 ttl=255 time=0.822 ms
+84 bytes from 192.168.1.1 icmp_seq=2 ttl=255 time=1.070 ms
+
+VPCS> 
+
+[2026-11-17T17:30:07+08:00] PC2> show ip
+show ip
+
+NAME        : VPCS[1]
+IP/MASK     : 192.168.1.2/24
+GATEWAY     : 192.168.1.1
+DNS         : 
+MAC         : 00:50:79:66:68:01
+LPORT       : 20014
+RHOST:PORT  : 127.0.0.1:20015
+MTU:        : 1500
+
+VPCS> 
+
+[2026-11-17T17:30:07+08:00] PC2> save
+save
+Saving startup configuration to startup.vpc
+.  done
+
+VPCS> 

@@ -1,0 +1,11 @@
+> ping -4 -t -w 1000 www.qq.com
+
+Pinging ins-ysshqadg.ias.tencent-cloud.net [120.233.51.33] with 32 bytes of data:
+Reply from 120.233.51.33: bytes=32 time=60ms TTL=49
+Reply from 120.233.51.33: bytes=32 time=47ms TTL=49
+Reply from 120.233.51.33: bytes=32 time=54ms TTL=49
+Reply from 120.233.51.33: bytes=32 time=47ms TTL=49
+Reply from 120.233.51.33: bytes=32 time=50ms TTL=49
+Reply from 120.233.51.33: bytes=32 time=48ms TTL=49
+
+[Continuous test stopped after 6 seconds.]

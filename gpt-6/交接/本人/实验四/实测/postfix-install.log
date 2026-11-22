@@ -1,0 +1,92 @@
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  ssl-cert
+Suggested packages:
+  libsasl2-modules-gssapi-mit | libsasl2-modules-gssapi-heimdal
+  libsasl2-modules-ldap libsasl2-modules-otp libsasl2-modules-sql procmail
+  postfix-mysql postfix-pgsql postfix-ldap postfix-pcre postfix-lmdb
+  postfix-sqlite sasl2-bin dovecot-common resolvconf postfix-cdb mail-reader
+  postfix-doc openssl-blacklist
+The following NEW packages will be installed:
+  postfix ssl-cert
+The following packages will be upgraded:
+  ca-certificates libsasl2-modules
+2 upgraded, 2 newly installed, 0 to remove and 192 not upgraded.
+Need to get 1,364 kB of archives.
+After this operation, 4,149 kB of additional disk space will be used.
+Get:1 https://archive.ubuntu.com/ubuntu bionic-updates/main amd64 ca-certificates all 20230311ubuntu0.18.04.1 [151 kB]
+Get:2 https://archive.ubuntu.com/ubuntu bionic-updates/main amd64 libsasl2-modules amd64 2.1.27~101-g0780600+dfsg-3ubuntu2.4 [48.9 kB]
+Get:3 https://archive.ubuntu.com/ubuntu bionic/main amd64 ssl-cert all 1.0.39 [17.0 kB]
+Get:4 https://archive.ubuntu.com/ubuntu bionic-updates/main amd64 postfix amd64 3.3.0-1ubuntu0.4 [1,147 kB]
+Preconfiguring packages ...
+Fetched 1,364 kB in 4s (333 kB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 69396 files and directories currently installed.)
+Preparing to unpack .../ca-certificates_20230311ubuntu0.18.04.1_all.deb ...
+Unpacking ca-certificates (20230311ubuntu0.18.04.1) over (20210119~18.04.1) ...
+Preparing to unpack .../libsasl2-modules_2.1.27~101-g0780600+dfsg-3ubuntu2.4_amd64.deb ...
+Unpacking libsasl2-modules:amd64 (2.1.27~101-g0780600+dfsg-3ubuntu2.4) over (2.1.27~101-g0780600+dfsg-3ubuntu2.3) ...
+Selecting previously unselected package ssl-cert.
+Preparing to unpack .../ssl-cert_1.0.39_all.deb ...
+Unpacking ssl-cert (1.0.39) ...
+Selecting previously unselected package postfix.
+Preparing to unpack .../postfix_3.3.0-1ubuntu0.4_amd64.deb ...
+Unpacking postfix (3.3.0-1ubuntu0.4) ...
+Setting up ssl-cert (1.0.39) ...
+Setting up libsasl2-modules:amd64 (2.1.27~101-g0780600+dfsg-3ubuntu2.4) ...
+Setting up ca-certificates (20230311ubuntu0.18.04.1) ...
+Updating certificates in /etc/ssl/certs...
+rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+26 added, 18 removed; done.
+Setting up postfix (3.3.0-1ubuntu0.4) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/postfix.service → /lib/systemd/system/postfix.service.
+Adding group `postfix' (GID 114) ...
+Done.
+Adding system user `postfix' (UID 110) ...
+Adding new user `postfix' (UID 110) with group `postfix' ...
+Not creating home directory `/var/spool/postfix'.
+Creating /etc/postfix/dynamicmaps.cf
+Adding group `postdrop' (GID 115) ...
+Done.
+setting myhostname: netlab-ubuntu.localdomain
+setting alias maps
+setting alias database
+changing /etc/mailname to netlab4.local
+setting myorigin
+setting destinations: netlab4.local, $myhostname, netlab-ubuntu, localhost.localdomain, localhost
+setting relayhost: 
+setting mynetworks: 127.0.0.0/8 [::ffff:127.0.0.0]/104 [::1]/128
+setting mailbox_size_limit: 0
+setting recipient_delimiter: +
+setting inet_interfaces: loopback-only
+setting default_transport: error
+setting relay_transport: error
+setting inet_protocols: all
+/etc/aliases does not exist, creating it.
+WARNING: /etc/aliases exists, but does not have a root alias.
+
+Postfix (main.cf) is now set up with a default configuration.  If you need to 
+make changes, edit /etc/postfix/main.cf (and others) as needed.  To view 
+Postfix configuration values, see postconf(1).
+
+After modifying main.cf, be sure to run 'service postfix reload'.
+
+Running newaliases
+Processing triggers for ureadahead (0.100.0-21) ...
+Processing triggers for systemd (237-3ubuntu10.52) ...
+Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+Processing triggers for rsyslog (8.32.0-1ubuntu4) ...
+Processing triggers for ufw (0.36-0ubuntu0.18.04.1) ...
+Processing triggers for ca-certificates (20230311ubuntu0.18.04.1) ...
+Updating certificates in /etc/ssl/certs...
+0 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+done.
+Processing triggers for libc-bin (2.27-3ubuntu1.4) ...
+ca-certificates	20230311ubuntu0.18.04.1
+libsasl2-modules:amd64	2.1.27~101-g0780600+dfsg-3ubuntu2.4
+postfix	3.3.0-1ubuntu0.4
+State    Recv-Q    Send-Q        Local Address:Port        Peer Address:Port    
+LISTEN   0         100               127.0.0.1:25               0.0.0.0:*       
+POSTFIX_SETUP_OK

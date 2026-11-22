@@ -1,0 +1,68 @@
+
+[2026-11-17T18:28:59+08:00] PC4> boot console
+
+Welcome to Virtual PC Simulator, version 0.6.2
+Dedicated to Daling.
+Build time: Apr 10 2019 02:42:20
+Copyright (c) 2007-2014, Paul Meng (mirnshi@gmail.com)
+All rights reserved.
+
+VPCS is free software, distributed under the terms of the "BSD" licence.
+Source code and license can be found at vpcs.sf.net.
+For more information, please visit wiki.freecode.com.cn.
+
+Press '?' to get help.
+
+Executing the startup file
+
+
+Checking for duplicate address...
+PC1 : 192.168.30.22 255.255.255.0
+
+VPCS> 
+
+[2026-11-17T18:28:59+08:00] PC4> set pcname PC4
+
+VPCS> 
+
+[2026-11-17T18:29:14+08:00] PC4> ip 192.168.30.22/24
+ip 192.168.30.22/24
+Checking for duplicate address...
+PC1 : 192.168.30.22 255.255.255.0
+
+VPCS> 
+
+[2026-11-17T18:29:51+08:00] PC4> ip 192.168.32.22/24
+ip 192.168.32.22/24
+Checking for duplicate address...
+PC1 : 192.168.32.22 255.255.255.0
+
+VPCS> 
+
+[2026-11-17T18:29:51+08:00] PC4> show ip
+show ip
+
+NAME        : VPCS[1]
+IP/MASK     : 192.168.32.22/24
+GATEWAY     : 0.0.0.0
+DNS         : 
+MAC         : 00:50:79:66:68:03
+LPORT       : 20056
+RHOST:PORT  : 127.0.0.1:20057
+MTU:        : 1500
+
+VPCS> 
+
+[2026-11-17T18:30:06+08:00] PC4> ip 192.168.30.150/25
+ip 192.168.30.150/25
+Checking for duplicate address...
+PC1 : 192.168.30.150 255.255.255.128
+
+VPCS> 
+
+[2026-11-17T18:30:23+08:00] PC4> ip 192.168.30.22/24
+ip 192.168.30.22/24
+Checking for duplicate address...
+PC1 : 192.168.30.22 255.255.255.0
+
+VPCS> 

@@ -1,0 +1,534 @@
+
+A:\>ver
+
+Microsoft Windows XP [Version 5.1.2600]
+
+A:\>date /t 
+Tue 11/17/2026 
+
+A:\>time /t 
+04:18 PM
+CAPTURE_NIC=Local Area Connection 2
+
+A:\>ipconfig /? 
+
+USAGE:
+    ipconfig [/? | /all | /renew [adapter] | /release [adapter] |
+              /flushdns | /displaydns | /registerdns |
+              /showclassid adapter |
+              /setclassid adapter [classid] ]
+
+where
+    adapter         Connection name 
+                   (wildcard characters * and ? allowed, see examples)
+
+    Options:
+       /?           Display this help message
+       /all         Display full configuration information.
+       /release     Release the IP address for the specified adapter.
+       /renew       Renew the IP address for the specified adapter.
+       /flushdns    Purges the DNS Resolver cache.
+       /registerdns Refreshes all DHCP leases and re-registers DNS names
+       /displaydns  Display the contents of the DNS Resolver Cache.
+       /showclassid Displays all the dhcp class IDs allowed for adapter.
+       /setclassid  Modifies the dhcp class id.  
+
+The default is to display only the IP address, subnet mask and
+default gateway for each adapter bound to TCP/IP.
+
+For Release and Renew, if no adapter name is specified, then the IP address
+leases for all adapters bound to TCP/IP will be released or renewed.
+
+For Setclassid, if no ClassId is specified, then the ClassId is removed.
+
+Examples:
+    > ipconfig                   ... Show information.
+    > ipconfig /all              ... Show detailed information
+    > ipconfig /renew            ... renew all adapters
+    > ipconfig /renew EL*        ... renew any connection that has its 
+                                     name starting with EL
+    > ipconfig /release *Con*    ... release all matching connections,
+                                     eg. "Local Area Connection 1" or
+                                         "Local Area Connection 2"
+
+A:\>ipconfig /all 
+
+Windows IP Configuration
+
+        Host Name . . . . . . . . . . . . : netlab-xp
+        Primary Dns Suffix  . . . . . . . : 
+        Node Type . . . . . . . . . . . . : Unknown
+        IP Routing Enabled. . . . . . . . : No
+        WINS Proxy Enabled. . . . . . . . : No
+        DNS Suffix Search List. . . . . . : localdomain
+
+Ethernet adapter Local Area Connection:
+
+        Connection-specific DNS Suffix  . : 
+        Description . . . . . . . . . . . : AMD PCNET Family PCI Ethernet Adapter
+        Physical Address. . . . . . . . . : 00-0C-29-ED-66-F6
+        Dhcp Enabled. . . . . . . . . . . : Yes
+        Autoconfiguration Enabled . . . . : Yes
+        Autoconfiguration IP Address. . . : 169.254.97.217
+        Subnet Mask . . . . . . . . . . . : 255.255.0.0
+        Default Gateway . . . . . . . . . : 
+
+Ethernet adapter Local Area Connection 2:
+
+        Connection-specific DNS Suffix  . : localdomain
+        Description . . . . . . . . . . . : AMD PCNET Family PCI Ethernet Adapter #2
+        Physical Address. . . . . . . . . : 00-50-56-2A-12-02
+        Dhcp Enabled. . . . . . . . . . . : Yes
+        Autoconfiguration Enabled . . . . : Yes
+        IP Address. . . . . . . . . . . . : 192.168.37.129
+        Subnet Mask . . . . . . . . . . . : 255.255.255.0
+        Default Gateway . . . . . . . . . : 
+        DHCP Server . . . . . . . . . . . : 192.168.37.254
+        DNS Servers . . . . . . . . . . . : 192.168.37.1
+        Lease Obtained. . . . . . . . . . : Tuesday, November 17, 2026 4:17:54 PM
+        Lease Expires . . . . . . . . . . : Tuesday, November 17, 2026 4:47:54 PM
+
+A:\>ipconfig /release "Local Area Connection 2" 
+
+Windows IP Configuration
+
+
+Ethernet adapter Local Area Connection:
+
+        Connection-specific DNS Suffix  . : 
+        Autoconfiguration IP Address. . . : 169.254.97.217
+        Subnet Mask . . . . . . . . . . . : 255.255.0.0
+        Default Gateway . . . . . . . . . : 
+
+Ethernet adapter Local Area Connection 2:
+
+        Connection-specific DNS Suffix  . : 
+        IP Address. . . . . . . . . . . . : 0.0.0.0
+        Subnet Mask . . . . . . . . . . . : 0.0.0.0
+        Default Gateway . . . . . . . . . : 
+
+A:\>ipconfig
+
+Windows IP Configuration
+
+
+Ethernet adapter Local Area Connection:
+
+        Connection-specific DNS Suffix  . : 
+        Autoconfiguration IP Address. . . : 169.254.97.217
+        Subnet Mask . . . . . . . . . . . : 255.255.0.0
+        Default Gateway . . . . . . . . . : 
+
+Ethernet adapter Local Area Connection 2:
+
+        Connection-specific DNS Suffix  . : 
+        IP Address. . . . . . . . . . . . : 0.0.0.0
+        Subnet Mask . . . . . . . . . . . : 0.0.0.0
+        Default Gateway . . . . . . . . . : 
+
+A:\>ipconfig /renew "Local Area Connection 2" 
+
+Windows IP Configuration
+
+
+Ethernet adapter Local Area Connection:
+
+        Connection-specific DNS Suffix  . : 
+        Autoconfiguration IP Address. . . : 169.254.97.217
+        Subnet Mask . . . . . . . . . . . : 255.255.0.0
+        Default Gateway . . . . . . . . . : 
+
+Ethernet adapter Local Area Connection 2:
+
+        Connection-specific DNS Suffix  . : localdomain
+        IP Address. . . . . . . . . . . . : 192.168.37.129
+        Subnet Mask . . . . . . . . . . . : 255.255.255.0
+        Default Gateway . . . . . . . . . : 
+
+A:\>ipconfig /all 
+
+Windows IP Configuration
+
+        Host Name . . . . . . . . . . . . : netlab-xp
+        Primary Dns Suffix  . . . . . . . : 
+        Node Type . . . . . . . . . . . . : Unknown
+        IP Routing Enabled. . . . . . . . : No
+        WINS Proxy Enabled. . . . . . . . : No
+        DNS Suffix Search List. . . . . . : localdomain
+
+Ethernet adapter Local Area Connection:
+
+        Connection-specific DNS Suffix  . : 
+        Description . . . . . . . . . . . : AMD PCNET Family PCI Ethernet Adapter
+        Physical Address. . . . . . . . . : 00-0C-29-ED-66-F6
+        Dhcp Enabled. . . . . . . . . . . : Yes
+        Autoconfiguration Enabled . . . . : Yes
+        Autoconfiguration IP Address. . . : 169.254.97.217
+        Subnet Mask . . . . . . . . . . . : 255.255.0.0
+        Default Gateway . . . . . . . . . : 
+
+Ethernet adapter Local Area Connection 2:
+
+        Connection-specific DNS Suffix  . : localdomain
+        Description . . . . . . . . . . . : AMD PCNET Family PCI Ethernet Adapter #2
+        Physical Address. . . . . . . . . : 00-50-56-2A-12-02
+        Dhcp Enabled. . . . . . . . . . . : Yes
+        Autoconfiguration Enabled . . . . : Yes
+        IP Address. . . . . . . . . . . . : 192.168.37.129
+        Subnet Mask . . . . . . . . . . . : 255.255.255.0
+        Default Gateway . . . . . . . . . : 
+        DHCP Server . . . . . . . . . . . : 192.168.37.254
+        DNS Servers . . . . . . . . . . . : 192.168.37.1
+        Lease Obtained. . . . . . . . . . : Tuesday, November 17, 2026 4:18:41 PM
+        Lease Expires . . . . . . . . . . : Tuesday, November 17, 2026 4:48:41 PM
+
+A:\>ipconfig /renew "Local Area Connection 2" 
+
+Windows IP Configuration
+
+
+Ethernet adapter Local Area Connection:
+
+        Connection-specific DNS Suffix  . : 
+        Autoconfiguration IP Address. . . : 169.254.97.217
+        Subnet Mask . . . . . . . . . . . : 255.255.0.0
+        Default Gateway . . . . . . . . . : 
+
+Ethernet adapter Local Area Connection 2:
+
+        Connection-specific DNS Suffix  . : localdomain
+        IP Address. . . . . . . . . . . . : 192.168.37.129
+        Subnet Mask . . . . . . . . . . . : 255.255.255.0
+        Default Gateway . . . . . . . . . : 
+
+A:\>ipconfig /all 
+
+Windows IP Configuration
+
+        Host Name . . . . . . . . . . . . : netlab-xp
+        Primary Dns Suffix  . . . . . . . : 
+        Node Type . . . . . . . . . . . . : Unknown
+        IP Routing Enabled. . . . . . . . : No
+        WINS Proxy Enabled. . . . . . . . : No
+        DNS Suffix Search List. . . . . . : localdomain
+
+Ethernet adapter Local Area Connection:
+
+        Connection-specific DNS Suffix  . : 
+        Description . . . . . . . . . . . : AMD PCNET Family PCI Ethernet Adapter
+        Physical Address. . . . . . . . . : 00-0C-29-ED-66-F6
+        Dhcp Enabled. . . . . . . . . . . : Yes
+        Autoconfiguration Enabled . . . . : Yes
+        Autoconfiguration IP Address. . . : 169.254.97.217
+        Subnet Mask . . . . . . . . . . . : 255.255.0.0
+        Default Gateway . . . . . . . . . : 
+
+Ethernet adapter Local Area Connection 2:
+
+        Connection-specific DNS Suffix  . : localdomain
+        Description . . . . . . . . . . . : AMD PCNET Family PCI Ethernet Adapter #2
+        Physical Address. . . . . . . . . : 00-50-56-2A-12-02
+        Dhcp Enabled. . . . . . . . . . . : Yes
+        Autoconfiguration Enabled . . . . : Yes
+        IP Address. . . . . . . . . . . . : 192.168.37.129
+        Subnet Mask . . . . . . . . . . . : 255.255.255.0
+        Default Gateway . . . . . . . . . : 
+        DHCP Server . . . . . . . . . . . : 192.168.37.254
+        DNS Servers . . . . . . . . . . . : 192.168.37.1
+        Lease Obtained. . . . . . . . . . : Tuesday, November 17, 2026 4:18:45 PM
+        Lease Expires . . . . . . . . . . : Tuesday, November 17, 2026 4:48:45 PM
+
+A:\>ipconfig /release "Local Area Connection 2" 
+
+Windows IP Configuration
+
+
+Ethernet adapter Local Area Connection:
+
+        Connection-specific DNS Suffix  . : 
+        Autoconfiguration IP Address. . . : 169.254.97.217
+        Subnet Mask . . . . . . . . . . . : 255.255.0.0
+        Default Gateway . . . . . . . . . : 
+
+Ethernet adapter Local Area Connection 2:
+
+        Connection-specific DNS Suffix  . : 
+        IP Address. . . . . . . . . . . . : 0.0.0.0
+        Subnet Mask . . . . . . . . . . . : 0.0.0.0
+        Default Gateway . . . . . . . . . : 
+
+A:\>ipconfig
+
+Windows IP Configuration
+
+
+Ethernet adapter Local Area Connection:
+
+        Connection-specific DNS Suffix  . : 
+        Autoconfiguration IP Address. . . : 169.254.97.217
+        Subnet Mask . . . . . . . . . . . : 255.255.0.0
+        Default Gateway . . . . . . . . . : 
+
+Ethernet adapter Local Area Connection 2:
+
+        Connection-specific DNS Suffix  . : 
+        IP Address. . . . . . . . . . . . : 0.0.0.0
+        Subnet Mask . . . . . . . . . . . : 0.0.0.0
+        Default Gateway . . . . . . . . . : 
+
+A:\>ipconfig /renew "Local Area Connection 2" 
+
+Windows IP Configuration
+
+
+Ethernet adapter Local Area Connection:
+
+        Connection-specific DNS Suffix  . : 
+        Autoconfiguration IP Address. . . : 169.254.97.217
+        Subnet Mask . . . . . . . . . . . : 255.255.0.0
+        Default Gateway . . . . . . . . . : 
+
+Ethernet adapter Local Area Connection 2:
+
+        Connection-specific DNS Suffix  . : localdomain
+        IP Address. . . . . . . . . . . . : 192.168.37.129
+        Subnet Mask . . . . . . . . . . . : 255.255.255.0
+        Default Gateway . . . . . . . . . : 
+
+A:\>ipconfig /all 
+
+Windows IP Configuration
+
+        Host Name . . . . . . . . . . . . : netlab-xp
+        Primary Dns Suffix  . . . . . . . : 
+        Node Type . . . . . . . . . . . . : Unknown
+        IP Routing Enabled. . . . . . . . : No
+        WINS Proxy Enabled. . . . . . . . : No
+        DNS Suffix Search List. . . . . . : localdomain
+
+Ethernet adapter Local Area Connection:
+
+        Connection-specific DNS Suffix  . : 
+        Description . . . . . . . . . . . : AMD PCNET Family PCI Ethernet Adapter
+        Physical Address. . . . . . . . . : 00-0C-29-ED-66-F6
+        Dhcp Enabled. . . . . . . . . . . : Yes
+        Autoconfiguration Enabled . . . . : Yes
+        Autoconfiguration IP Address. . . : 169.254.97.217
+        Subnet Mask . . . . . . . . . . . : 255.255.0.0
+        Default Gateway . . . . . . . . . : 
+
+Ethernet adapter Local Area Connection 2:
+
+        Connection-specific DNS Suffix  . : localdomain
+        Description . . . . . . . . . . . : AMD PCNET Family PCI Ethernet Adapter #2
+        Physical Address. . . . . . . . . : 00-50-56-2A-12-02
+        Dhcp Enabled. . . . . . . . . . . : Yes
+        Autoconfiguration Enabled . . . . : Yes
+        IP Address. . . . . . . . . . . . : 192.168.37.129
+        Subnet Mask . . . . . . . . . . . : 255.255.255.0
+        Default Gateway . . . . . . . . . : 
+        DHCP Server . . . . . . . . . . . : 192.168.37.254
+        DNS Servers . . . . . . . . . . . : 192.168.37.1
+        Lease Obtained. . . . . . . . . . : Tuesday, November 17, 2026 4:18:51 PM
+        Lease Expires . . . . . . . . . . : Tuesday, November 17, 2026 4:48:51 PM
+
+A:\>ping -n 1 192.168.37.1 
+
+Pinging 192.168.37.1 with 32 bytes of data:
+
+Request timed out.
+
+Ping statistics for 192.168.37.1:
+    Packets: Sent = 1, Received = 0, Lost = 1 (100% loss),
+
+A:\>ping 192.168.37.1 
+
+Pinging 192.168.37.1 with 32 bytes of data:
+
+Request timed out.
+Request timed out.
+Request timed out.
+Request timed out.
+
+Ping statistics for 192.168.37.1:
+    Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+
+A:\>ping -a -n 3 -l 64 -w 1200 192.168.37.1 
+
+Pinging 192.168.37.1 with 64 bytes of data:
+
+Request timed out.
+Request timed out.
+Request timed out.
+
+Ping statistics for 192.168.37.1:
+    Packets: Sent = 3, Received = 0, Lost = 3 (100% loss),
+
+A:\>ping -n 3 -l 5000 -w 1500 192.168.37.1 
+
+Pinging 192.168.37.1 with 5000 bytes of data:
+
+Request timed out.
+Request timed out.
+Request timed out.
+
+Ping statistics for 192.168.37.1:
+    Packets: Sent = 3, Received = 0, Lost = 3 (100% loss),
+
+A:\>ping -n 1 -f -l 5000 -w 1200 192.168.37.1 
+
+Pinging 192.168.37.1 with 5000 bytes of data:
+
+Packet needs to be fragmented but DF set.
+
+Ping statistics for 192.168.37.1:
+    Packets: Sent = 1, Received = 0, Lost = 1 (100% loss),
+
+A:\>netstat /? 
+
+Displays protocol statistics and current TCP/IP network connections.
+
+NETSTAT [-a] [-b] [-e] [-n] [-o] [-p proto] [-r] [-s] [-v] [interval]
+
+  -a            Displays all connections and listening ports.
+  -b            Displays the executable involved in creating each connection or
+                listening port. In some cases well-known executables host
+                multiple independent components, and in these cases the
+                sequence of components involved in creating the connection
+                or listening port is displayed. In this case the executable
+                name is in [] at the bottom, on top is the component it called,
+                and so forth until TCP/IP was reached. Note that this option
+                can be time-consuming and will fail unless you have sufficient
+                permissions.
+  -e            Displays Ethernet statistics. This may be combined with the -s
+                option.
+  -n            Displays addresses and port numbers in numerical form.
+  -o            Displays the owning process ID associated with each connection.
+  -p proto      Shows connections for the protocol specified by proto; proto
+                may be any of: TCP, UDP, TCPv6, or UDPv6.  If used with the -s
+                option to display per-protocol statistics, proto may be any of:
+                IP, IPv6, ICMP, ICMPv6, TCP, TCPv6, UDP, or UDPv6.
+  -r            Displays the routing table.
+  -s            Displays per-protocol statistics.  By default, statistics are
+                shown for IP, IPv6, ICMP, ICMPv6, TCP, TCPv6, UDP, and UDPv6;
+                the -p option may be used to specify a subset of the default.
+  -v            When used in conjunction with -b, will display sequence of
+                components involved in creating the connection or listening
+                port for all executables.
+  interval      Redisplays selected statistics, pausing interval seconds
+                between each display.  Press CTRL+C to stop redisplaying
+                statistics.  If omitted, netstat will print the current
+                configuration information once. 
+
+A:\>netstat -a -n 
+
+Active Connections
+
+  Proto  Local Address          Foreign Address        State
+  TCP    0.0.0.0:135            0.0.0.0:0              LISTENING
+  TCP    0.0.0.0:445            0.0.0.0:0              LISTENING
+  TCP    127.0.0.1:1029         0.0.0.0:0              LISTENING
+  TCP    169.254.97.217:139     0.0.0.0:0              LISTENING
+  TCP    192.168.37.129:139     0.0.0.0:0              LISTENING
+  UDP    0.0.0.0:445            *:*                    
+  UDP    0.0.0.0:500            *:*                    
+  UDP    0.0.0.0:1035           *:*                    
+  UDP    0.0.0.0:1060           *:*                    
+  UDP    0.0.0.0:4500           *:*                    
+  UDP    127.0.0.1:123          *:*                    
+  UDP    127.0.0.1:1025         *:*                    
+  UDP    127.0.0.1:1900         *:*                    
+  UDP    169.254.97.217:123     *:*                    
+  UDP    169.254.97.217:137     *:*                    
+  UDP    169.254.97.217:138     *:*                    
+  UDP    169.254.97.217:1900    *:*                    
+  UDP    192.168.37.129:123     *:*                    
+  UDP    192.168.37.129:137     *:*                    
+  UDP    192.168.37.129:138     *:*                    
+  UDP    192.168.37.129:1900    *:*                    
+
+A:\>netstat -e 
+Interface Statistics
+
+                           Received            Sent
+
+Bytes                         20250           37834
+Unicast packets                  32              70
+Non-unicast packets             107             132
+Discards                          0               0
+Errors                            0               0
+Unknown protocols                 0
+
+A:\>netstat -s 
+
+IPv4 Statistics
+
+  Packets Received                   = 123
+  Received Header Errors             = 0
+  Received Address Errors            = 17
+  Datagrams Forwarded                = 0
+  Unknown Protocols Received         = 0
+  Received Packets Discarded         = 15
+  Received Packets Delivered         = 107
+  Output Requests                    = 182
+  Routing Discards                   = 0
+  Discarded Output Packets           = 4
+  Output Packet No Route             = 0
+  Reassembly Required                = 0
+  Reassembly Successful              = 0
+  Reassembly Failures                = 0
+  Datagrams Successfully Fragmented  = 3
+  Datagrams Failing Fragmentation    = 1
+  Fragments Created                  = 12
+
+ICMPv4 Statistics
+
+                            Received    Sent
+  Messages                  0           12        
+  Errors                    0           0         
+  Destination Unreachable   0           0         
+  Time Exceeded             0           0         
+  Parameter Problems        0           0         
+  Source Quenches           0           0         
+  Redirects                 0           0         
+  Echos                     0           12        
+  Echo Replies              0           0         
+  Timestamps                0           0         
+  Timestamp Replies         0           0         
+  Address Masks             0           0         
+  Address Mask Replies      0           0         
+
+TCP Statistics for IPv4
+
+  Active Opens                        = 0
+  Passive Opens                       = 0
+  Failed Connection Attempts          = 0
+  Reset Connections                   = 0
+  Current Connections                 = 0
+  Segments Received                   = 0
+  Segments Sent                       = 0
+  Segments Retransmitted              = 0
+
+UDP Statistics for IPv4
+
+  Datagrams Received    = 107
+  No Ports              = 0
+  Receive Errors        = 0
+  Datagrams Sent        = 142
+
+A:\>netstat -b -n 
+
+Active Connections
+
+  Proto  Local Address          Foreign Address        State           PID
+
+A:\>arp -a 
+
+Interface: 192.168.37.129 --- 0x10004
+  Internet Address      Physical Address      Type
+  192.168.37.1          00-50-56-c0-00-01     dynamic   
+  192.168.37.254        00-50-56-ec-21-68     dynamic   
+
+A:\>time /t 
+04:19 PM
+LAB2_DONE

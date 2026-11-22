@@ -1,0 +1,12 @@
+phase,source,destination,expected,observed
+direct,PC1,192.168.1.2,0,0
+direct,PC1,202.103.2.1,1,1
+direct,PC1,202.103.1.1,1,1
+direct,PC2,202.103.2.2,1,1
+direct,PC2,192.168.1.1,1,1
+direct,R1,202.103.2.2,1,1
+direct,R1,192.168.1.1,0,0
+direct,R2,202.103.2.1,1,1
+direct,R2,202.103.1.1,0,0
+learned,PC1,192.168.1.2,1,1
+learned,PC2,202.103.1.2,1,1

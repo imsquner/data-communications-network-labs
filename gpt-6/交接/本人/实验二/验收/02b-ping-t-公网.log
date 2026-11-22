@@ -1,0 +1,11 @@
+> ping -4 -t -w 1000 www.baidu.com
+
+Pinging www.a.shifen.com [36.152.44.132] with 32 bytes of data:
+Reply from 36.152.44.132: bytes=32 time=48ms TTL=50
+Reply from 36.152.44.132: bytes=32 time=31ms TTL=50
+Reply from 36.152.44.132: bytes=32 time=30ms TTL=50
+Reply from 36.152.44.132: bytes=32 time=33ms TTL=50
+Reply from 36.152.44.132: bytes=32 time=58ms TTL=50
+Reply from 36.152.44.132: bytes=32 time=38ms TTL=50
+
+[Continuous test stopped after 6 seconds.]

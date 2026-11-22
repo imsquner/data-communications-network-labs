@@ -1,0 +1,12 @@
+netlab
+uid=1000(netlab) gid=1000(netlab) groups=1000(netlab),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),108(lxd)
+sudo_non_interactive=1
+lo               UNKNOWN        127.0.0.1/8 
+/etc/netplan/50-nat.yaml:1:1: Error in network definition: expected mapping (check indentation)
+network;
+^
+total 12
+-rw-r--r-- 1 root root 118 Nov  7 21:06 00-installer-config.yaml
+-rw-r--r-- 1 root root 184 Nov 17 13:21 50-nat.yaml
+-rw-r--r-- 1 root root 129 Nov  7 21:15 99-netlab.yaml
+inactive

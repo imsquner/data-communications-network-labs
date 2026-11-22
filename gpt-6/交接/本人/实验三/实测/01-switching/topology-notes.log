@@ -1,0 +1,23 @@
+2026-11-17T17:18:50+08:00 node SW1 dynamips NM-16ESW console=5010
+2026-11-17T17:18:51+08:00 node SW2 dynamips NM-16ESW console=5011
+2026-11-17T17:18:51+08:00 node PC1 vpcs  console=5012
+2026-11-17T17:18:51+08:00 node PC2 vpcs  console=5014
+2026-11-17T17:18:51+08:00 node PC3 vpcs  console=5016
+2026-11-17T17:18:51+08:00 node PC4 vpcs  console=5018
+2026-11-17T17:18:53+08:00 link SW1:FastEthernet0/0 <-> SW2:FastEthernet0/0 2dd001c0-8375-477f-9f38-afeb471181f7
+2026-11-17T17:18:53+08:00 link SW1:FastEthernet0/1 <-> PC1:Ethernet0 73a80066-3bd1-4658-8ac4-8730a520f13b
+2026-11-17T17:18:53+08:00 link SW1:FastEthernet0/2 <-> PC2:Ethernet0 7ea6c570-bf86-4ecc-8c24-4f8a6a00944f
+2026-11-17T17:18:53+08:00 link SW2:FastEthernet0/1 <-> PC3:Ethernet0 56d771ea-f68c-4d4a-91a6-03c2dbc1deaa
+2026-11-17T17:18:54+08:00 link SW2:FastEthernet0/2 <-> PC4:Ethernet0 1af6636d-96ed-4c5e-9b37-80b9ae5395ed
+2026-11-17T17:19:01+08:00 all nodes started
+2026-11-17T17:19:23+08:00 NM-16ESW slot 0, FastEthernet0/0-15, and VPCS startup verified
+2026-11-17T17:19:23+08:00 same-/24: configuring and probing
+2026-11-17T17:19:50+08:00 same-/24: PASS
+2026-11-17T17:19:50+08:00 PC4-other-subnet: configuring and probing
+2026-11-17T17:20:11+08:00 PC4-other-subnet: PASS
+2026-11-17T17:20:11+08:00 two-/25: configuring and probing
+2026-11-17T17:20:29+08:00 two-/25: PASS
+2026-11-17T17:20:29+08:00 VLAN-200-300: configuring and probing
+2026-11-17T17:21:44+08:00 VLAN-200-300: PASS
+2026-11-17T17:21:54+08:00 all nodes stopped
+2026-11-17T17:22:01+08:00 export verified NL3-A-171849-Switching.gns3project

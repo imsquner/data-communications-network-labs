@@ -1,0 +1,3 @@
+drwxr-xr-x root:root /opt/netlab4/b/site
+-rw-r--r-- root:root /opt/netlab4/b/site/status.html
+-rw-r--r-- root:root /opt/netlab4/b/site/welcome.htm

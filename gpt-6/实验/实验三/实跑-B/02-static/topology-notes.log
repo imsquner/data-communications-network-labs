@@ -1,0 +1,13 @@
+2026-11-17T17:51:32+08:00 node R1 dynamips NM-4E console=5000
+2026-11-17T17:51:36+08:00 node R2 dynamips NM-4E console=5002
+2026-11-17T17:51:36+08:00 node PC1 vpcs  console=5004
+2026-11-17T17:51:36+08:00 node PC2 vpcs  console=5006
+2026-11-17T17:51:41+08:00 link PC1:Ethernet0 <-> R1:Ethernet0/1 1a55c7f6-610d-4583-815b-a6637b979ce8
+2026-11-17T17:51:47+08:00 link R1:Ethernet0/0 <-> R2:Ethernet0/0 332f1100-9d95-4325-9957-f4e3da3514d9
+2026-11-17T17:51:47+08:00 link R2:Ethernet0/1 <-> PC2:Ethernet0 74ebda79-882e-4ff8-83bf-0a6db9a83742
+2026-11-17T17:52:00+08:00 all nodes started
+2026-11-17T17:52:39+08:00 direct: PASS
+2026-11-17T17:52:50+08:00 one-sided: PASS
+2026-11-17T17:53:10+08:00 two-sided: PASS
+2026-11-17T17:53:16+08:00 all nodes stopped
+2026-11-17T17:53:22+08:00 export verified NL3-B-174753-Static.gns3project

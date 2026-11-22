@@ -1,0 +1,10 @@
+reading from file /opt/netlab4/xp-client-proof/icmp.pcap, link-type EN10MB (Ethernet)
+02:32:15.586658 IP 192.168.77.21 > 192.168.77.2: ICMP echo request, id 512, seq 256, length 40
+02:32:15.586672 IP 192.168.77.2 > 192.168.77.21: ICMP echo reply, id 512, seq 256, length 40
+02:32:16.584327 IP 192.168.77.21 > 192.168.77.2: ICMP echo request, id 512, seq 512, length 40
+02:32:16.584348 IP 192.168.77.2 > 192.168.77.21: ICMP echo reply, id 512, seq 512, length 40
+02:32:17.584932 IP 192.168.77.21 > 192.168.77.2: ICMP echo request, id 512, seq 768, length 40
+02:32:17.584995 IP 192.168.77.2 > 192.168.77.21: ICMP echo reply, id 512, seq 768, length 40
+02:32:18.584799 IP 192.168.77.21 > 192.168.77.2: ICMP echo request, id 512, seq 1024, length 40
+02:32:18.584821 IP 192.168.77.2 > 192.168.77.21: ICMP echo reply, id 512, seq 1024, length 40
+02:34:15.692760 IP 192.168.77.2 > 192.168.77.61: ICMP echo request, id 62996, seq 0, length 28

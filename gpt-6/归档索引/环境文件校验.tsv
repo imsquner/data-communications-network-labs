@@ -1,0 +1,21 @@
+原相对路径	版本或用途	来源或生成方式	字节数	SHA-256	状态
+gpt-6/实验/实验四/实跑/来宾工作副本/lab4-ubuntu.vmdk	Ubuntu Server 18.04 实验四实跑副本	本机由 VMware 创建或由来宾复制生成，见实验四记录	543	8b46d5bfdc4780f8d2ea5339970eafa005af9705acca3adc51b8e2f0519b1d63	已计算
+gpt-6/环境/虚拟机/WindowsXP/winxp.vmx	Windows XP Professional SP3 实验来宾	本机由 VMware 创建或由来宾复制生成，见实验四记录	1901	27e043d568bfe0ae423603f2b2bd5daf24488ce18a3dadd273a67d787068f49e	已计算
+gpt-6/环境/虚拟机/Ubuntu1804/ubuntu1804.vmx	Ubuntu Server 18.04 实验基线来宾	本机由 VMware 创建或由来宾复制生成，见实验四记录	2524	6b10afe4b84adfa961cfe51d5fa2f7cfc3d4f5d9b031d359ffb46116943aaa54	已计算
+gpt-6/实验/实验四/实跑/来宾工作副本/lab4-ubuntu.vmx	Ubuntu Server 18.04 实验四实跑副本	本机由 VMware 创建或由来宾复制生成，见实验四记录	2610	309b5a9e2a0c0b6e9eef22ed853c45b4b83874805badc118d80c4f672267cd9a	已计算
+gpt-6/环境/工具/npcap-1.60.exe	Npcap 1.60	https://npcap.com/#download （软件项目入口，原下载地址未核）	1091728	87d3624772b8272767a3a4ffcceecc3052489cd09e494a6c352dce5e5efa4070	已计算
+gpt-6/环境/工具/tightvnc-2.8.90-gpl-setup-64bit.msi	TightVNC 2.8.90 x64	https://www.tightvnc.com/download.php （软件项目入口，原下载地址未核）	2543616	9693cb4cdc2e7e482e8e3f5890415b57ef87de3369fa5c337db516218a1170ce	已计算
+gpt-6/实验/实验四/预检/源码/httpd-2.4.71.tar.bz2	Apache HTTP Server 2.4.71	https://archive.apache.org/dist/httpd/ （项目归档入口）	8618142	2bc5da5a33c247341de082717d4ebcb5cb49e8b73a05b7fddf7d5d6dc2f8de62	已计算
+gpt-6/实验/实验四/预检/源码/dhcp-4.3.1.tar.gz	ISC DHCP 4.3.1	https://downloads.isc.org/isc/dhcp/4.3.1/	8980806	266cbca8a7a6bb8f9ccc5765da0d2b04099329314a54a4fc1022d510ad3e9af0	已计算
+gpt-6/实验/实验四/预检/源码/dhcp-4.4.3-P1.tar.gz	ISC DHCP 4.4.3-P1（预检）	https://downloads.isc.org/isc/dhcp/4.4.3-P1/	10081055	0ac416bb55997ca8632174fd10737fd61cdb8dba2752160a335775bc21dc73c7	已计算
+gpt-6/环境/镜像/c3640-a3js-mz.124-25d.image	Cisco 3640 IOS 12.4(25d)	原来源见 环境/验收/来源.md。GNS3 模板 https://gns3.com/marketplace/appliances/cisco-3640	65688632	525a7ee0a9a4503ee79060202e9d85080432fe3065d945ae226ec8eb3b79a5f6	已计算
+gpt-6/环境/验收/ios-link-smoke/c3640-a3js-mz.124-25d.image	Cisco 3640 IOS 12.4(25d)	原来源见 环境/验收/来源.md。GNS3 模板 https://gns3.com/marketplace/appliances/cisco-3640	65688632	525a7ee0a9a4503ee79060202e9d85080432fe3065d945ae226ec8eb3b79a5f6	已计算
+gpt-6/环境/验收/ios-smoke/c3640-a3js-mz.124-25d.image	Cisco 3640 IOS 12.4(25d)	原来源见 环境/验收/来源.md。GNS3 模板 https://gns3.com/marketplace/appliances/cisco-3640	65688632	525a7ee0a9a4503ee79060202e9d85080432fe3065d945ae226ec8eb3b79a5f6	已计算
+gpt-6/环境/工具/WiresharkPortable64_4.6.9.paf.exe	Wireshark Portable 4.6.9 x64	https://mirror.nju.edu.cn/wireshark/win64/	108302760	71bcfda9eefec8088faaf0b8e6d026369ea83ae6149cd0b76ccf0b3194240db0	已计算
+gpt-6/环境/工具/GNS3-2.2.61-all-in-one.exe	GNS3 2.2.61	https://github.com/GNS3/gns3-gui/releases/tag/v2.2.61	109190376	32956fb74b130f709ca09a18d05371cd5f7608215daa03f63f3ba745c809f765	已计算
+gpt-6/环境/镜像/en_windows_xp_professional_with_service_pack_3_x86_cd_x14-80428.iso	Windows XP Professional SP3 x86 英文零售版	原来源见 环境/验收/来源.md	617756672	62b6c91563bad6cd12a352aa018627c314cfc5162d8e9f8af0756a642e602a46	已计算
+gpt-6/环境/镜像/ubuntu-18.04.6-live-server-amd64.iso	Ubuntu Server 18.04.6 amd64	https://mirrors.ustc.edu.cn/ubuntu-releases/18.04.6/	1016070144	6c647b1ab4318e8c560d5748f908e108be654bad1e165f7cf4f3c1fc43995934	已计算
+gpt-6/环境/虚拟机/WindowsXP/winxp.vmdk	Windows XP Professional SP3 实验来宾	本机由 VMware 创建或由来宾复制生成，见实验四记录	1628700672	841f845d7d3748171bf8a97df57a4a0b7fdb405c2054cbb5799c7c3fa3ac62f5	已计算
+gpt-6/环境/虚拟机/Ubuntu1804/564d63a8-5050-2cfd-56fe-2afdcc55b103.vmem	Ubuntu Server 18.04 实验基线来宾	本机由 VMware 创建或由来宾复制生成，见实验四记录	2147483648	ef2860faf865c492560d8e50ab0c74c133f08e27ec93b614e10422c08488590b	已计算
+gpt-6/环境/虚拟机/Ubuntu1804/ubuntu1804.vmdk	Ubuntu Server 18.04 实验基线来宾	本机由 VMware 创建或由来宾复制生成，见实验四记录	4145414144	4a9457eb98e8e72fd1419045f452ac80f032c8374c05b4214f32b3b02ea29233	已计算
+gpt-6/实验/实验四/实跑/来宾工作副本/lab4-ubuntu-flat.vmdk	Ubuntu Server 18.04 实验四实跑副本	本机由 VMware 创建或由来宾复制生成，见实验四记录	12884901888	3c68d65f4185153aec0f98c57a193c434cddeb94bbe6836abbcf86e287352176	已计算

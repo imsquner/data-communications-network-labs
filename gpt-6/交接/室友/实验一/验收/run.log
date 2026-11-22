@@ -1,0 +1,46 @@
+NetLab 1: CRC-16/Modbus and Hamming(11,7)
+Seed: 20261119 | positions are zero-based
+CRC reference: 0x4B37 PASS
+CRC single-bit: 80/80 PASS
+Hamming clean: 128/128 PASS
+Hamming single-bit: 1408/1408 PASS
+
+CRC hand-check frame: A8 BE FE | damaged: A9 BE FE | recalculated tail: 7F 3E | outcome=REJECT
+
+CRC original data + CRC (low byte first): 0D BF DE 02 CE 82 79 6A 99 58
+CRC k=0 positions=- received=0D BF DE 02 CE 82 79 6A 99 58 outcome=ACCEPT
+CRC k=1 positions=68 received=0D BF DE 02 CE 82 79 6A 89 58 outcome=REJECT
+CRC k=2 positions=63,73 received=0D BF DE 02 CE 82 79 EA 99 5A outcome=REJECT
+CRC k=3 positions=19,41,58 received=0D BF D6 02 CE 80 79 6E 99 58 outcome=REJECT
+CRC k=4 positions=33,44,62,75 received=0D BF DE 02 CC 92 79 2A 99 50 outcome=REJECT
+CRC k=5 positions=21,22,33,36,70 received=0D BF BE 02 DC 82 79 6A D9 58 outcome=REJECT
+CRC k=6 positions=13,17,43,56,60,79 received=0D 9F DC 02 CE 8A 79 7B 99 D8 outcome=REJECT
+CRC k=7 positions=2,17,29,35,62,70,75 received=09 BF DC 22 C6 82 79 2A D9 50 outcome=REJECT
+CRC k=8 positions=3,6,18,33,47,55,66,74 received=45 BF DA 02 CC 02 F9 6A 9D 5C outcome=REJECT
+CRC k=9 positions=10,11,17,26,27,39,40,58,60 received=0D B3 DC 0E 4E 83 79 7E 99 58 outcome=REJECT
+CRC k=10 positions=4,19,24,36,42,49,59,60,70,76 received=1D BF D6 03 DE 86 7B 72 D9 48 outcome=REJECT
+
+ASCII frame (decimal -> 11-bit codeword, position 11 to 1):
+80 -> 10100000010
+36 -> 01010101000
+44 -> 01011100011
+112 -> 11110000000
+49 -> 01100000100
+102 -> 11000110010
+Hamming hand-check: original=10100000010 flipped-index=5 received=10100100010 syndrome=6 candidate-index=5 output-ASCII=80
+Hamming k=0 positions=- received=10100000010 syndrome=0 candidate=-1 output=10100000010 output-ASCII=80 outcome=clean
+Hamming k=1 positions=4 received=10100010010 syndrome=5 candidate=4 output=10100000010 output-ASCII=80 outcome=corrected
+Hamming k=2 positions=7,9 received=11110000010 syndrome=2 candidate=1 output=11110000000 output-ASCII=112 outcome=miscorrected
+Hamming k=3 positions=0,9,10 received=01100000011 syndrome=0 candidate=-1 output=01100000011 output-ASCII=48 outcome=undetected
+Hamming k=4 positions=0,4,6,8 received=10001010011 syndrome=10 candidate=9 output=11001010011 output-ASCII=106 outcome=miscorrected
+Hamming k=5 positions=2,3,4,9,10 received=01100011110 syndrome=3 candidate=2 output=01100011010 output-ASCII=50 outcome=miscorrected
+Hamming k=6 positions=0,1,2,3,7,9 received=11110001101 syndrome=6 candidate=5 output=11110101101 output-ASCII=117 outcome=miscorrected
+Hamming k=7 positions=1,4,5,6,7,8,10 received=00011110000 syndrome=12 candidate=-1 output=00011110000 output-ASCII=14 outcome=rejected
+Hamming k=8 positions=0,2,3,4,5,6,8,9 received=11001111111 syndrome=1 candidate=0 output=11001111110 output-ASCII=111 outcome=miscorrected
+Hamming k=9 positions=0,1,2,3,4,7,8,9,10 received=01010011101 syndrome=1 candidate=0 output=01010011100 output-ASCII=35 outcome=miscorrected
+Hamming k=10 positions=0,2,3,4,5,6,7,8,9,10 received=01011111111 syndrome=2 candidate=1 output=01011111101 output-ASCII=47 outcome=miscorrected
+Hamming k=11 positions=0,1,2,3,4,5,6,7,8,9,10 received=01011111101 syndrome=0 candidate=-1 output=01011111101 output-ASCII=47 outcome=undetected
+CRC undetected example k=4 positions=6,36,48,49 original=D9 75 8F 7E 53 67 95 32 D0 D1 received=99 75 8F 7E 43 67 96 32 D0 D1
+CRC undetected example k=6 positions=15,16,30,46,71,73 original=C8 D5 72 7A 1D D5 0F 0F 48 48 received=C8 55 73 3A 1D 95 0F 0F C8 4A
+
+Statistics: 23 groups x 10000 trials = 230000

@@ -1,0 +1,34 @@
+2026-11-17T18:32:59+08:00 all nodes started
+2026-11-17T18:33:44+08:00 R1 suspend: started
+2026-11-17T18:33:44+08:00 R2 suspend: started
+2026-11-17T18:33:44+08:00 inter-router link removed
+2026-11-17T18:33:44+08:00 R1 resume: suspended
+2026-11-17T18:33:44+08:00 R2 resume: suspended
+2026-11-17T18:33:45+08:00 learned routes present [True, True]
+2026-11-17T18:34:00+08:00 learned routes present [True, True]
+2026-11-17T18:34:16+08:00 learned routes present [True, True]
+2026-11-17T18:34:31+08:00 learned routes present [True, True]
+2026-11-17T18:34:46+08:00 learned routes present [True, True]
+2026-11-17T18:35:02+08:00 learned routes present [True, True]
+2026-11-17T18:35:17+08:00 learned routes present [True, True]
+2026-11-17T18:35:32+08:00 learned routes present [True, True]
+2026-11-17T18:35:48+08:00 learned routes present [True, True]
+2026-11-17T18:36:03+08:00 learned routes present [True, True]
+2026-11-17T18:36:18+08:00 learned routes present [True, True]
+2026-11-17T18:36:34+08:00 learned routes present [True, True]
+2026-11-17T18:36:49+08:00 learned routes present [True, True]
+2026-11-17T18:37:05+08:00 learned routes present [True, True]
+2026-11-17T18:37:20+08:00 learned routes present [True, True]
+2026-11-17T18:37:35+08:00 learned routes present [True, True]
+2026-11-17T18:37:51+08:00 learned routes present [True, True]
+2026-11-17T18:38:06+08:00 learned routes present [True, True]
+2026-11-17T18:38:21+08:00 learned routes present [True, False]
+2026-11-17T18:38:37+08:00 learned routes present [False, False]
+2026-11-17T18:39:07+08:00 R1 suspend: started
+2026-11-17T18:39:07+08:00 R2 suspend: started
+2026-11-17T18:39:07+08:00 link R1:Ethernet0/0 <-> R2:Ethernet0/0 2312eb4b-7ded-4966-96f1-3c11f8b82ff4
+2026-11-17T18:39:07+08:00 R1 resume: suspended
+2026-11-17T18:39:07+08:00 R2 resume: suspended
+2026-11-17T18:39:07+08:00 link R1:Ethernet0/0 <-> R2:Ethernet0/0 2cadf74e-d336-4af9-a111-eaa4adf221cb
+2026-11-17T18:39:12+08:00 RIP hot reattach passed after programming link on running nodes
+2026-11-17T18:39:50+08:00 all nodes stopped

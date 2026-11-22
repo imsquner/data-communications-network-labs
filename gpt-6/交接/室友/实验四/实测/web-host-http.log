@@ -1,0 +1,22 @@
+>$ curl.exe --resolve web-b.lab4.test:18081:192.168.174.129 http://web-b.lab4.test:18081/welcome.htm
+HTTP/1.1 200 OK
+Date: Wed, 18 Nov 2026 01:14:47 GMT
+Server: Apache/2.4.71 (Unix)
+Last-Modified: Wed, 18 Nov 2026 01:11:46 GMT
+ETag: "7e-66082b1e23339"
+Accept-Ranges: bytes
+Content-Length: 126
+Content-Type: text/html
+
+<!doctype html><meta charset=utf-8><title>Round B HTM</title><h1>NetLab 4 Round B</h1><p>Source-built Apache: welcome.htm</p>
+>$ curl.exe --resolve web-b.lab4.test:18081:192.168.174.129 http://web-b.lab4.test:18081/status.html
+HTTP/1.1 200 OK
+Date: Wed, 18 Nov 2026 01:14:47 GMT
+Server: Apache/2.4.71 (Unix)
+Last-Modified: Wed, 18 Nov 2026 01:11:46 GMT
+ETag: "7f-66082b1e23339"
+Accept-Ranges: bytes
+Content-Length: 127
+Content-Type: text/html
+
+<!doctype html><meta charset=utf-8><title>Round B HTML</title><h1>NetLab 4 Round B</h1><p>Source-built Apache: status.html</p>

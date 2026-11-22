@@ -1,0 +1,7 @@
+g++.exe (Rev8, Built by MSYS2 project) 15.2.0
+Build flags: -std=c++17 -O2 -Wall -Wextra -Wconversion -Werror
+PASS: reference vector, 80 CRC single-bit cases, 128 clean Hamming cases, 1408 Hamming single-bit cases, 23 groups, 230000 trials
+PASS: reference vector, 80 CRC single-bit cases, 128 clean Hamming cases, 1408 Hamming single-bit cases, 23 groups, 230000 trials
+PASS: run.log and statistics.csv are byte-identical over two runs
+run.log SHA256: 50501890ABE455C4AC69EDB6777C5F0276F8D842F241D5530AD306F4F5BDBEFD
+statistics.csv SHA256: FACA810E087EAAEA2236E4EF3ACD2A7227D43C69991E026E5EACABF940B0EA9F

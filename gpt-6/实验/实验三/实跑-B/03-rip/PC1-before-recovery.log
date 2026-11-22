@@ -1,0 +1,62 @@
+
+[2026-11-17T17:54:06+08:00] PC1> boot console
+
+Welcome to Virtual PC Simulator, version 0.6.2
+Dedicated to Daling.
+Build time: Apr 10 2019 02:42:20
+Copyright (c) 2007-2014, Paul Meng (mirnshi@gmail.com)
+All rights reserved.
+
+VPCS is free software, distributed under the terms of the "BSD" licence.
+Source code and license can be found at vpcs.sf.net.
+For more information, please visit wiki.freecode.com.cn.
+
+Press '?' to get help.
+
+VPCS> 
+
+[2026-11-17T17:54:06+08:00] PC1> set pcname PC1
+
+VPCS> 
+
+[2026-11-17T17:54:13+08:00] PC1> ip 202.103.1.2/24 202.103.1.1
+ip 202.103.1.2/24 202.103.1.1
+Checking for duplicate address...
+PC1 : 202.103.1.2 255.255.255.0 gateway 202.103.1.1
+
+VPCS> 
+
+[2026-11-17T17:54:23+08:00] PC1> ping 192.168.1.2 -c 2
+ping 192.168.1.2 -c 2
+192.168.1.2 icmp_seq=1 timeout
+*202.103.1.1 icmp_seq=2 ttl=255 time=15.732 ms (ICMP type:3, code:1, Destination host unreachable)
+
+VPCS> 
+
+[2026-11-17T17:54:25+08:00] PC1> ping 202.103.2.1 -c 2
+ping 202.103.2.1 -c 2
+84 bytes from 202.103.2.1 icmp_seq=1 ttl=255 time=16.369 ms
+84 bytes from 202.103.2.1 icmp_seq=2 ttl=255 time=15.348 ms
+
+VPCS> 
+
+[2026-11-17T17:54:28+08:00] PC1> ping 202.103.1.1 -c 2
+ping 202.103.1.1 -c 2
+84 bytes from 202.103.1.1 icmp_seq=1 ttl=255 time=16.084 ms
+84 bytes from 202.103.1.1 icmp_seq=2 ttl=255 time=14.920 ms
+
+VPCS> 
+
+[2026-11-17T17:54:49+08:00] PC1> ping 192.168.1.2 -c 2
+ping 192.168.1.2 -c 2
+84 bytes from 192.168.1.2 icmp_seq=1 ttl=62 time=60.096 ms
+84 bytes from 192.168.1.2 icmp_seq=2 ttl=62 time=61.738 ms
+
+VPCS> 
+
+[2026-11-17T17:59:43+08:00] PC1> ping 192.168.1.2 -c 2
+ping 192.168.1.2 -c 2
+*202.103.1.1 icmp_seq=1 ttl=255 time=14.255 ms (ICMP type:3, code:1, Destination host unreachable)
+*202.103.1.1 icmp_seq=2 ttl=255 time=15.185 ms (ICMP type:3, code:1, Destination host unreachable)
+
+VPCS> 

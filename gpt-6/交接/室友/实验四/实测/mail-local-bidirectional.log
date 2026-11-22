@@ -1,0 +1,4 @@
+Subject: LAB4-LOCAL-B
+Subject: Re: LAB4-LOCAL-B-to-sender
+Nov 18 01:11:47 netlab-ubuntu postfix/local[20465]: B83F186A50: to=<lab4mb@localhost>, relay=local, delay=0.05, delays=0.02/0/0/0.03, dsn=2.0.0, status=sent (delivered to mailbox)
+Nov 18 01:16:51 netlab-ubuntu postfix/local[20888]: 9421E86A6C: to=<lab4local@localhost>, relay=local, delay=0.02, delays=0.02/0/0/0.01, dsn=2.0.0, status=sent (delivered to mailbox)

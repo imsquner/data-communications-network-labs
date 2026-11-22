@@ -1,0 +1,37 @@
+PASS DHCP: 12 XP packets, 2 DORA exchanges, 1 unicast renew/ACK, 2 Releases.
+PASS first Echo Request: frame 21, protocol 1, 60-byte IPv4 packet, 20-byte header, no fragmentation.
+PASS fragments: frames 29-40, three sets of four, 5008-byte IPv4 payload reassembled each time.
+PASS capture: 40 frames. Dumpcap reported 0 drops.
+PASS private LAN and DF boundary, same-target public trace and evidence files.
+PASS ten PNG files decode, including command help and private LAN continuous ping proof.
+SHA-256 (captured files, logs, source, TSVs, report and screenshots)
+48dbbb8fef18fc807a54d307d2c92a539655840bca335a381a17a450a0ec762d  XP-LAB2.CMD
+ded395753c6227054f171ba22d95fc5bdf10c0e6b07e9e3cbe0f7dcc612beb23  XP-LAN2.CMD
+acaff9acfe73f4b1461d0d7ba764b59801f52ad2e2642f45c4637a56b84aef8a  XP-PING-T.VBS
+a66edbb2c9861cbd78fac68f23df1de3f83ce14a2cab3b7face341d4e2a1945c  验收\01-公网命令.log
+319c2f2adb170ec5b0450296a1c2c57ebefe3601b491cdcf1434c71349345489  验收\02-同站点路由对照.log
+09ea50395b0ee0762cc9bfc028ee59de7544622c5333401a2cd3363c40cafb59  验收\02b-ping-t-公网.log
+fdfd4b14062d5a0aab46c646952992004b20f6f8f7f053559dc1ab7843ec8c0c  验收\03-VMnet1原始抓包.pcapng
+a8a6e7bbf5e4328a46d29124b529587631ddf291e2decf8d9d2ea453746557db  验收\03-抓包日志.log
+1436f431d66c791ab36126fc5b54e7d2f6213abe06e2d5720639524acd94e24d  验收\06-抓包日志.log
+be0b01cfaf52b534fb2a49050e0b43c02607cc49f50406fb4877d381da12324a  验收\06-首次手动抓包.pcapng
+6eca91170a6007c40a4cba42905012a3155a1b0c0c1cbe43ffa2cac87fa5893b  验收\07-XP-commands.log
+396bc8b8d8d85f1ff766a6d9c9312bbc26f0a1de9b48cb29154381ef007a05be  验收\08-DHCP与IPv4分片.pcapng
+ee9b6ca89aee474a68395f1032eeeeae3591a4ce4bd3654f98c8e00da2c3ac9e  验收\08-抓包日志.log
+24f9bfdbbe205285df2c9a94726517b360af70d21783a28ddc0d5ee0a460befc  验收\09-XP-复跑命令.log
+5b8b9ae18631c78550f2b19a2273627cab2246576aa027b103b62c6a0df09c5b  验收\10-DHCP字段.tsv
+963d42e77f63096ef6aea978b931aea73e1665422e577eb2ad8225aa55f6713a  验收\11-IPv4字段.tsv
+ef4bde1abe7121280885874aca2f3f60a0f8f02a129a765580e259b3c6054812  验收\12-主样本完整解码.txt
+da5a41c49c1d201916ed22b89f15801ebcdacde07b00964428d608356d40b18e  验收\13-抓包元数据.txt
+772365ea8356b43f026feb81d3518b75a51dec3d5cc05326c4aabf8268ce4c52  验收\14-XP-Ubuntu-private-LAN.log
+557c3c61014c5e74e15aa4e87315216bb3e51ddb1b7d0adf7c5ccaab1938eb3a  验收\图01-局域网Ping.png
+f2d205f55af8cc9870b6be8c1f95cc84cba3423ce3799208151d3ad8eff65afd  验收\图02-公网Ping.png
+7e3aabb55c219cf688a42c2803f555622a0b54d8658aa52da76014ac32b32ed8  验收\图03-IP配置释放续租.png
+33e88f285cbfe34dd6d509551802164145219af6db22b06d1ddd8bc3f796ea44  验收\图04-Netstat统计与进程.png
+a80a385efe5eca4d93ae80edaed862fea9659752c222366973eb4b53cdbc1bd5  验收\图05-站点与不可达地址路由.png
+62c1d95f233c20c0a205b59aef4ad78f602c2105fd15a748b550896d0f57d1b4  验收\图06-DHCP事务.png
+0832707b39f08f0618b1bd198f7414080fd9da43f6404401e32363aa08fcfb98  验收\图07-首个ICMP请求.png
+07b55224f615c9fb8be6d96612709fb69a2e574b1bebb4589d90a1ef120a7206  验收\图08-IPv4首片.png
+6e46635fcda4250c65ddf58acd7eb89894a2e89ee2c79c02834467a5072970fe  验收\图09-IPv4尾片与重组.png
+6b770d063fde2c7337df312e43421061c53288486c22dfc150d07f559322c817  验收\图10-帮助与局域网持续Ping.png
+6f55b3e159fb172670265e5f69dc31a656fbd099547bed4259362f3bf535f022  验收说明.md

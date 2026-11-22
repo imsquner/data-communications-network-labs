@@ -1,0 +1,12 @@
+2026-11-17T17:57:45+08:00 node R1 dynamips NM-4E console=5045
+2026-11-17T17:57:50+08:00 node R2 dynamips NM-4E console=5046
+2026-11-17T17:57:50+08:00 node PC1 vpcs  console=5047
+2026-11-17T17:57:50+08:00 node PC2 vpcs  console=5049
+2026-11-17T17:57:57+08:00 link PC1:Ethernet0 <-> R1:Ethernet0/1 d3b825db-9be4-4b46-8954-d5873dbfaacc
+2026-11-17T17:58:05+08:00 link R1:Ethernet0/0 <-> R2:Ethernet0/0 41c5af23-ce76-47d4-9d11-687c629ead49
+2026-11-17T17:58:05+08:00 link R2:Ethernet0/1 <-> PC2:Ethernet0 a8daa624-e2cd-4231-89e1-bbdb17779b9e
+2026-11-17T17:58:21+08:00 all nodes started
+2026-11-17T17:58:59+08:00 direct: PASS
+2026-11-17T17:59:57+08:00 learned: PASS
+2026-11-17T18:00:03+08:00 all nodes stopped
+2026-11-17T18:00:10+08:00 export verified NL3-A-175740-OSPF.gns3project

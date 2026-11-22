@@ -1,0 +1,114 @@
+2026-11-17T16:18:29.2251072+08:00
+> ping.exe /?
+
+Usage: ping [-t] [-a] [-n count] [-l size] [-f] [-i TTL] [-v TOS]
+            [-r count] [-s count] [[-j host-list] | [-k host-list]]
+            [-w timeout] [-R] [-S srcaddr] [-c compartment] [-p]
+            [-4] [-6] target_name
+
+Options:
+    -t             Ping the specified host until stopped.
+                   To see statistics and continue - type Control-Break;
+                   To stop - type Control-C.
+    -a             Resolve addresses to hostnames.
+    -n count       Number of echo requests to send.
+    -l size        Send buffer size.
+    -f             Set Don't Fragment flag in packet (IPv4-only).
+    -i TTL         Time To Live.
+    -v TOS         Type Of Service (IPv4-only. This setting has been deprecated
+                   and has no effect on the type of service field in the IP
+                   Header).
+    -r count       Record route for count hops (IPv4-only).
+    -s count       Timestamp for count hops (IPv4-only).
+    -j host-list   Loose source route along host-list (IPv4-only).
+    -k host-list   Strict source route along host-list (IPv4-only).
+    -w timeout     Timeout in milliseconds to wait for each reply.
+    -R             Use routing header to test reverse route also (IPv6-only).
+                   Per RFC 5095 the use of this routing header has been
+                   deprecated. Some systems may drop echo requests if
+                   this header is used.
+    -S srcaddr     Source address to use.
+    -c compartment Routing compartment identifier.
+    -p             Ping a Hyper-V Network Virtualization provider address.
+    -4             Force using IPv4.
+    -6             Force using IPv6.
+
+exit=0
+> ping.exe -4 www.qq.com
+
+Pinging ins-ysshqadg.ias.tencent-cloud.net [120.233.51.33] with 32 bytes of data:
+Reply from 120.233.51.33: bytes=32 time=68ms TTL=49
+Reply from 120.233.51.33: bytes=32 time=43ms TTL=49
+Reply from 120.233.51.33: bytes=32 time=45ms TTL=49
+Reply from 120.233.51.33: bytes=32 time=42ms TTL=49
+
+Ping statistics for 120.233.51.33:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 42ms, Maximum = 68ms, Average = 49ms
+exit=0
+> ping.exe -4 -a -n 3 -l 64 -w 1000 www.qq.com
+
+Pinging ins-ysshqadg.ias.tencent-cloud.net [120.233.51.33] with 64 bytes of data:
+Reply from 120.233.51.33: bytes=64 time=58ms TTL=49
+Reply from 120.233.51.33: bytes=64 time=43ms TTL=49
+Reply from 120.233.51.33: bytes=64 time=51ms TTL=49
+
+Ping statistics for 120.233.51.33:
+    Packets: Sent = 3, Received = 3, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 43ms, Maximum = 58ms, Average = 50ms
+exit=0
+> ping.exe -4 -r 9 -n 4 -w 900 www.qq.com
+
+Pinging ins-ysshqadg.ias.tencent-cloud.net [120.233.51.33] with 32 bytes of data:
+Request timed out.
+Request timed out.
+Request timed out.
+Request timed out.
+
+Ping statistics for 120.233.51.33:
+    Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+exit=1
+> tracert.exe -4 -d -h 24 -w 750 www.qq.com
+
+Tracing route to ins-ysshqadg.ias.tencent-cloud.net [120.233.51.33]
+over a maximum of 24 hops:
+
+  1     5 ms     2 ms     1 ms  192.168.48.230 
+  2     *        *        *     Request timed out.
+  3     *        *        *     Request timed out.
+  4     *        *        *     Request timed out.
+  5     *        *        *     Request timed out.
+  6    14 ms    20 ms    25 ms  111.4.237.62 
+  7     *        *        *     Request timed out.
+  8     *        *        *     Request timed out.
+  9     *        *        *     Request timed out.
+ 10     *       46 ms    43 ms  221.183.39.146 
+ 11    40 ms    38 ms    40 ms  211.136.208.53 
+ 12    35 ms    38 ms    43 ms  221.179.6.146 
+ 13    47 ms    37 ms    43 ms  120.233.74.66 
+ 14     *        *        *     Request timed out.
+ 15     *        *        *     Request timed out.
+ 16     *        *        *     Request timed out.
+ 17     *        *        *     Request timed out.
+ 18     *        *        *     Request timed out.
+ 19    41 ms    53 ms    56 ms  120.233.51.33 
+
+Trace complete.
+exit=0
+> tracert.exe -4 -d -h 8 -w 500 192.0.2.2
+
+Tracing route to 192.0.2.2 over a maximum of 8 hops
+
+  1     2 ms     3 ms     1 ms  192.168.48.230 
+  2     *        *        *     Request timed out.
+  3     *        *        *     Request timed out.
+  4     *        *        *     Request timed out.
+  5     *        *        *     Request timed out.
+  6     *       12 ms    21 ms  111.4.237.62 
+  7    13 ms    19 ms    21 ms  211.137.53.213 
+  8     *        *        *     Request timed out.
+
+Trace complete.
+exit=0

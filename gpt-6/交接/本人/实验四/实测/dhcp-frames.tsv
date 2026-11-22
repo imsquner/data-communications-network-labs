@@ -1,0 +1,6 @@
+frame.number	dhcp.id	dhcp.option.dhcp	dhcp.ip.your	dhcp.option.dhcp_server_id	dhcp.option.ip_address_lease_time
+1	0xd48a099e	1	0.0.0.0		
+2	0xd48a099e	1	0.0.0.0		
+3	0xd48a099e	2	192.168.77.21	192.168.77.2	3600
+4	0xd48a099e	3	0.0.0.0	192.168.77.2	
+5	0xd48a099e	5	192.168.77.21	192.168.77.2	3600

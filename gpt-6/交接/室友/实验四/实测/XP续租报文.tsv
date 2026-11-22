@@ -1,0 +1,3 @@
+frame.number	dhcp.id	dhcp.option.dhcp	dhcp.ip.your	dhcp.option.dhcp_server_id	dhcp.option.ip_address_lease_time
+1	0x477786fc	3	0.0.0.0		
+2	0x477786fc	5	192.168.77.61	192.168.77.2	3600

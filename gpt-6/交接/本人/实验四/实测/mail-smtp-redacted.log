@@ -1,0 +1,5 @@
+Nov 18 01:15:02 netlab-ubuntu postfix/pickup[20779]: 9F1B386A61: uid=0 from=<[foxmail-account]>
+Nov 18 01:15:02 netlab-ubuntu postfix/cleanup[20789]: 9F1B386A61: message-id=<lab4-20261118-a-20261118011502@foxmail.com>
+Nov 18 01:15:02 netlab-ubuntu postfix/qmgr[20780]: 9F1B386A61: from=<[foxmail-account]>, size=337, nrcpt=1 (queue active)
+Nov 18 01:15:04 netlab-ubuntu postfix/smtp[20798]: 9F1B386A61: to=<[school-account]>, relay=smtp.qq.com[120.241.140.18]:465, delay=1.4, delays=0.01/0.04/0.83/0.54, dsn=2.0.0, status=sent (250 OK: queued as.)
+Nov 18 01:15:04 netlab-ubuntu postfix/qmgr[20780]: 9F1B386A61: removed

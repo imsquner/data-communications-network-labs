@@ -1,0 +1,157 @@
+
+[2026-11-17T18:31:48+08:00] R2> boot console
+Connected to Dynamips VM "R2" (ID 2, type c3600) - Console port
+Press ENTER to get the prompt.
+ROMMON emulation microcode.
+
+Launching IOS image at 0x80008000...
+
+Smart Init is disabled. IOMEM set to: 5  
+
+Using iomem percentage: 5
+
+              Restricted Rights Legend
+
+Use, duplication, or disclosure by the Government is
+subject to restrictions as set forth in subparagraph
+(c) of the Commercial Computer Software - Restricted
+Rights clause at FAR sec. 52.227-19 and subparagraph
+(c) (1) (ii) of the Rights in Technical Data and Computer
+Software clause at DFARS sec. 252.227-7013.
+
+           cisco Systems, Inc.
+           170 West Tasman Drive
+           San Jose, California 95134-1706
+
+
+
+Cisco IOS Software, 3600 Software (C3640-A3JS-M), Version 12.4(25d), RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2010 by Cisco Systems, Inc.
+Compiled Wed 18-Aug-10 06:58 by prod_rel_team
+
+Cisco 3640 (R4700) processor (revision 0xFF) with 124928K/6144K bytes of memory.
+Processor board ID FF1045C5
+R4700 CPU at 100MHz, Implementation 33, Rev 1.2
+4 Ethernet interfaces
+DRAM configuration is 64 bits wide with parity enabled.
+125K bytes of NVRAM.
+8192K bytes of processor board System flash (Read/Write)
+
+
+
+Press RETURN to get started!
+
+
+*Mar  1 00:00:02.159: %LINEPROTO-5-UPDOWN: Line protocol on Interface VoIP-Null0, changed state to up
+*Mar  1 00:00:02.663: %LINEPROTO-5-UPDOWN: Line protocol on Interface IPv6-mpls, changed state to up
+*Mar  1 00:00:02.811: %SYS-5-CONFIG_I: Configured from memory by console
+*Mar  1 00:00:02.915: %SYS-5-RESTART: System restarted --
+Cisco IOS Software, 3600 Software (C3640-A3JS-M), Version 12.4(25d), RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2010 by Cisco Systems, Inc.
+Compiled Wed 18-Aug-10 06:58 by prod_rel_team
+*Mar  1 00:00:02.915: %SNMP-5-COLDSTART: SNMP agent on host R2 is undergoing a cold start
+*Mar  1 00:00:02.959: %LINK-3-UPDOWN: Interface Ethernet0/0, changed state to up
+*Mar  1 00:00:02.979: %LINK-3-UPDOWN: Interface Ethernet0/1, changed state to up
+*Mar  1 00:00:03.055: %LINK-5-CHANGED: Interface Ethernet0/2, changed state to administratively down
+*Mar  1 00:00:03.055: %LINK-5-CHANGED: Interface Ethernet0/3, changed state to administratively down
+*Mar  1 00:00:03.959: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet0/0, changed state to up
+*Mar  1 00:00:03.979: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet0/1, changed state to up
+*Mar  1 00:00:04.055: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet0/2, changed state to down
+*Mar  1 00:00:04.055: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet0/3, changed state to down
+R2>
+
+[2026-11-17T18:31:48+08:00] R2> enable
+enable
+R2#
+
+[2026-11-17T18:31:48+08:00] R2> terminal length 0
+terminal length 0
+R2#
+
+[2026-11-17T18:31:49+08:00] R2> configure terminal
+configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+R2(config)#
+
+[2026-11-17T18:31:49+08:00] R2> hostname R2
+hostname R2
+R2(config)#
+
+[2026-11-17T18:31:49+08:00] R2> no ip domain lookup
+no ip domain lookup
+R2(config)#
+
+[2026-11-17T18:31:49+08:00] R2> line con 0
+line con 0
+R2(config-line)#
+
+[2026-11-17T18:31:49+08:00] R2> exec-timeout 0 0
+exec-timeout 0 0
+R2(config-line)#
+
+[2026-11-17T18:31:49+08:00] R2> logging synchronous
+logging synchronous
+R2(config-line)#
+
+[2026-11-17T18:31:49+08:00] R2> exit
+exit
+R2(config)#
+
+[2026-11-17T18:31:49+08:00] R2> end
+end
+R2#
+
+[2026-11-17T18:31:50+08:00] R2> configure terminal
+configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+R2(config)#
+
+[2026-11-17T18:31:50+08:00] R2> no ip route 202.103.1.0 255.255.255.0 202.103.2.1
+no ip route 202.103.1.0 255.255.255.0 202.103.2.1
+R2(config)#
+
+[2026-11-17T18:31:50+08:00] R2> end
+end
+R2#
+
+[2026-11-17T18:31:50+08:00] R2> show ip route connected
+show ip route connected
+C    202.103.2.0/24 is directly connected, Ethernet0/0
+C    192.168.1.0/24 is directly connected, Ethernet0/1
+R2#
+
+[2026-11-17T18:32:18+08:00] R2> async
+
+*Mar  1 00:00:11.147: %SYS-5-CONFIG_I: Configured from console by console
+*Mar  1 00:00:11.831: %SYS-5-CONFIG_I: Configured from console by console
+R2#
+
+[2026-11-17T18:32:18+08:00] R2> show ip route static
+show ip route static
+
+R2#
+
+[2026-11-17T18:32:24+08:00] R2> configure terminal
+configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+R2(config)#
+
+[2026-11-17T18:32:24+08:00] R2> ip route 202.103.1.0 255.255.255.0 202.103.2.1
+ip route 202.103.1.0 255.255.255.0 202.103.2.1
+R2(config)#
+
+[2026-11-17T18:32:24+08:00] R2> end
+end
+R2#
+
+[2026-11-17T18:32:29+08:00] R2> async
+
+*Mar  1 00:00:42.867: %SYS-5-CONFIG_I: Configured from console by console
+R2#
+
+[2026-11-17T18:32:30+08:00] R2> show ip route static
+show ip route static
+S    202.103.1.0/24 [1/0] via 202.103.2.1
+R2#

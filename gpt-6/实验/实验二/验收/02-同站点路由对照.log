@@ -1,0 +1,61 @@
+2026-11-17T14:54:47.9906554+08:00
+> ping.exe -4 www.baidu.com
+
+Pinging www.a.shifen.com [36.152.44.93] with 32 bytes of data:
+Reply from 36.152.44.93: bytes=32 time=37ms TTL=50
+Reply from 36.152.44.93: bytes=32 time=35ms TTL=50
+Reply from 36.152.44.93: bytes=32 time=35ms TTL=50
+Reply from 36.152.44.93: bytes=32 time=33ms TTL=50
+
+Ping statistics for 36.152.44.93:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 33ms, Maximum = 37ms, Average = 35ms
+exit=0
+> ping.exe -4 -a -n 3 -l 56 -w 1000 www.baidu.com
+
+Pinging www.a.shifen.com [36.152.44.93] with 56 bytes of data:
+Reply from 36.152.44.93: bytes=56 time=39ms TTL=50
+Reply from 36.152.44.93: bytes=56 time=38ms TTL=50
+Reply from 36.152.44.93: bytes=56 time=43ms TTL=50
+
+Ping statistics for 36.152.44.93:
+    Packets: Sent = 3, Received = 3, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 38ms, Maximum = 43ms, Average = 40ms
+exit=0
+> ping.exe -4 -r 9 -n 4 -w 900 www.baidu.com
+
+Pinging www.a.shifen.com [36.152.44.93] with 32 bytes of data:
+Request timed out.
+Request timed out.
+Request timed out.
+Request timed out.
+
+Ping statistics for 36.152.44.93:
+    Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+exit=1
+> tracert.exe -4 -d -h 22 -w 900 www.baidu.com
+
+Tracing route to www.a.shifen.com [36.152.44.93]
+over a maximum of 22 hops:
+
+  1    13 ms     1 ms     1 ms  192.168.48.230 
+  2     *        *        *     Request timed out.
+  3     *        *       24 ms  172.21.1.1 
+  4     *        *        *     Request timed out.
+  5     *        *        *     Request timed out.
+  6    20 ms    17 ms     *     111.4.237.58 
+  7     *        *        *     Request timed out.
+  8     *        *        *     Request timed out.
+  9     *        *        *     Request timed out.
+ 10     *        *       24 ms  221.183.77.158 
+ 11     *        *        *     Request timed out.
+ 12     *        *        *     Request timed out.
+ 13     *        *        *     Request timed out.
+ 14     *        *        *     Request timed out.
+ 15     *        *        *     Request timed out.
+ 16    33 ms    39 ms    34 ms  36.152.44.93 
+
+Trace complete.
+exit=0

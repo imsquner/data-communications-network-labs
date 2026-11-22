@@ -1,0 +1,11 @@
+netplan_exit=0
+lo               UNKNOWN        127.0.0.1/8 
+enp0s17          UP             192.168.77.2/24 
+enp0s19          UP             192.168.174.129/24 
+build-essential	12.4ubuntu1
+libapr1-dev	1.6.3-2
+libaprutil1-dev	1.6.1-2ubuntu0.1
+libpcre2-dev:amd64	10.31-2
+tcpdump	4.9.3-0ubuntu0.18.04.1
+smoke_port_listeners=0
+package_processes=0

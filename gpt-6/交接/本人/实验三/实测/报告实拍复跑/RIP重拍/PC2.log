@@ -1,0 +1,47 @@
+
+[2026-11-17T18:45:14+08:00] PC2> boot console
+
+Welcome to Virtual PC Simulator, version 0.6.2
+Dedicated to Daling.
+Build time: Apr 10 2019 02:42:20
+Copyright (c) 2007-2014, Paul Meng (mirnshi@gmail.com)
+All rights reserved.
+
+VPCS is free software, distributed under the terms of the "BSD" licence.
+Source code and license can be found at vpcs.sf.net.
+For more information, please visit wiki.freecode.com.cn.
+
+Press '?' to get help.
+
+Executing the startup file
+
+
+Checking for duplicate address...
+PC1 : 192.168.1.2 255.255.255.0 gateway 192.168.1.1
+
+VPCS> 
+
+[2026-11-17T18:45:14+08:00] PC2> set pcname PC2
+
+VPCS> 
+
+[2026-11-17T18:45:19+08:00] PC2> ping 202.103.1.2 -c 2
+ping 202.103.1.2 -c 2
+84 bytes from 202.103.1.2 icmp_seq=1 ttl=62 time=61.473 ms
+84 bytes from 202.103.1.2 icmp_seq=2 ttl=62 time=60.729 ms
+
+VPCS> 
+
+[2026-11-17T18:50:44+08:00] PC2> ping 202.103.1.2 -c 2
+ping 202.103.1.2 -c 2
+84 bytes from 202.103.1.2 icmp_seq=1 ttl=62 time=63.049 ms
+84 bytes from 202.103.1.2 icmp_seq=2 ttl=62 time=62.040 ms
+
+VPCS> 
+
+[2026-11-17T18:50:49+08:00] PC2> ping 202.103.1.2 -c 2
+ping 202.103.1.2 -c 2
+84 bytes from 202.103.1.2 icmp_seq=1 ttl=62 time=62.011 ms
+84 bytes from 202.103.1.2 icmp_seq=2 ttl=62 time=62.060 ms
+
+VPCS> 

@@ -1,0 +1,14 @@
+2026-11-17T17:30:17+08:00 node R1 dynamips NM-4E console=5000
+2026-11-17T17:30:19+08:00 node R2 dynamips NM-4E console=5001
+2026-11-17T17:30:19+08:00 node PC1 vpcs  console=5002
+2026-11-17T17:30:19+08:00 node PC2 vpcs  console=5004
+2026-11-17T17:30:23+08:00 link PC1:Ethernet0 <-> R1:Ethernet0/1 a493671e-d4f5-4a60-b5af-096e0d8e248b
+2026-11-17T17:30:26+08:00 link R1:Ethernet0/0 <-> R2:Ethernet0/0 2e7109cb-bff9-4d11-aad1-c1929d3f8206
+2026-11-17T17:30:26+08:00 link R2:Ethernet0/1 <-> PC2:Ethernet0 d4198fe4-de0f-4770-81a3-1771e98954c3
+2026-11-17T17:30:34+08:00 all nodes started
+2026-11-17T17:31:18+08:00 direct: PASS
+2026-11-17T17:31:31+08:00 learned: PASS
+2026-11-17T17:31:31+08:00 R1 suspend: started
+2026-11-17T17:31:31+08:00 R2 suspend: started
+2026-11-17T17:31:31+08:00 physical topology link deleted while both routers suspended
+2026-11-17T17:31:32+08:00 all nodes stopped

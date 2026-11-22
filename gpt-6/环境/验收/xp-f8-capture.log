@@ -1,0 +1,4 @@
+Capturing on 'Adapter for loopback traffic capture'
+File: D:\学校文件\01_学业课程\大三上\数据通信与计算机网络\通讯\通讯\gpt-6\环境\验收\xp-f8-smoke.pcapng
+Packets: 1 Packets: 11 Packets: 18 Packets: 19 Packets captured: 19
+Packets received/dropped on interface 'Adapter for loopback traffic capture': 19/0 (pcap:0/dumpcap:0/flushed:0/ps_ifdrop:0) (100.0%)

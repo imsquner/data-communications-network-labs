@@ -1,0 +1,6 @@
+Running as unit: netlab4-web-smoke2.service
+Running as unit: netlab4-web-capture.service
+<!doctype html><meta charset="utf-8"><title>NetLab 4 HTM probe</title><h1>NetLab 4 HTM path check</h1>
+ HTTP=200
+<!doctype html><meta charset="utf-8"><title>NetLab 4 HTML probe</title><h1>NetLab 4 HTML path check</h1>
+ HTTP=200

@@ -1,0 +1,54 @@
+-- Logs begin at Sat 2026-11-07 21:09:59 UTC, end at Wed 2026-11-18 01:40:30 UTC. --
+2026-11-18T01:39:33+0000 netlab-ubuntu systemd[1]: Started /usr/bin/timeout 150 /opt/netlab4/a/dhcp/sbin/dhcpd -f -d -4 -cf /opt/netlab4/lease-transition/dhcpd.conf -lf /opt/netlab4/lease-transition/dhcpd.leases enp0s17.
+2026-11-18T01:39:33+0000 netlab-ubuntu dhcpd[21820]: Internet Systems Consortium DHCP Server 4.3.1
+2026-11-18T01:39:33+0000 netlab-ubuntu timeout[21814]: Internet Systems Consortium DHCP Server 4.3.1
+2026-11-18T01:39:33+0000 netlab-ubuntu timeout[21814]: Copyright 2004-2014 Internet Systems Consortium.
+2026-11-18T01:39:33+0000 netlab-ubuntu timeout[21814]: All rights reserved.
+2026-11-18T01:39:33+0000 netlab-ubuntu timeout[21814]: For info, please visit https://www.isc.org/software/dhcp/
+2026-11-18T01:39:33+0000 netlab-ubuntu timeout[21814]: Config file: /opt/netlab4/lease-transition/dhcpd.conf
+2026-11-18T01:39:33+0000 netlab-ubuntu timeout[21814]: Database file: /opt/netlab4/lease-transition/dhcpd.leases
+2026-11-18T01:39:33+0000 netlab-ubuntu timeout[21814]: PID file: /var/run/dhcpd.pid
+2026-11-18T01:39:33+0000 netlab-ubuntu dhcpd[21820]: Copyright 2004-2014 Internet Systems Consortium.
+2026-11-18T01:39:33+0000 netlab-ubuntu dhcpd[21820]: All rights reserved.
+2026-11-18T01:39:33+0000 netlab-ubuntu dhcpd[21820]: For info, please visit https://www.isc.org/software/dhcp/
+2026-11-18T01:39:33+0000 netlab-ubuntu dhcpd[21820]: Config file: /opt/netlab4/lease-transition/dhcpd.conf
+2026-11-18T01:39:33+0000 netlab-ubuntu dhcpd[21820]: Database file: /opt/netlab4/lease-transition/dhcpd.leases
+2026-11-18T01:39:33+0000 netlab-ubuntu dhcpd[21820]: PID file: /var/run/dhcpd.pid
+2026-11-18T01:39:33+0000 netlab-ubuntu dhcpd[21820]: Wrote 0 deleted host decls to leases file.
+2026-11-18T01:39:33+0000 netlab-ubuntu timeout[21814]: Wrote 0 deleted host decls to leases file.
+2026-11-18T01:39:33+0000 netlab-ubuntu dhcpd[21820]: Wrote 0 new dynamic host decls to leases file.
+2026-11-18T01:39:33+0000 netlab-ubuntu timeout[21814]: Wrote 0 new dynamic host decls to leases file.
+2026-11-18T01:39:33+0000 netlab-ubuntu dhcpd[21820]: Wrote 1 leases to leases file.
+2026-11-18T01:39:33+0000 netlab-ubuntu timeout[21814]: Wrote 1 leases to leases file.
+2026-11-18T01:39:33+0000 netlab-ubuntu dhcpd[21820]: Listening on LPF/enp0s17/00:0c:29:55:b1:03/192.168.77.0/24
+2026-11-18T01:39:33+0000 netlab-ubuntu timeout[21814]: Listening on LPF/enp0s17/00:0c:29:55:b1:03/192.168.77.0/24
+2026-11-18T01:39:33+0000 netlab-ubuntu timeout[21814]: Sending on   LPF/enp0s17/00:0c:29:55:b1:03/192.168.77.0/24
+2026-11-18T01:39:33+0000 netlab-ubuntu timeout[21814]: Sending on   Socket/fallback/fallback-net
+2026-11-18T01:39:33+0000 netlab-ubuntu timeout[21814]: Server starting service.
+2026-11-18T01:39:33+0000 netlab-ubuntu dhcpd[21820]: Sending on   LPF/enp0s17/00:0c:29:55:b1:03/192.168.77.0/24
+2026-11-18T01:39:33+0000 netlab-ubuntu dhcpd[21820]: Sending on   Socket/fallback/fallback-net
+2026-11-18T01:39:33+0000 netlab-ubuntu dhcpd[21820]: Server starting service.
+2026-11-18T01:39:46+0000 netlab-ubuntu dhcpd[21820]: DHCPREQUEST for 192.168.77.61 from 00:0c:29:ed:66:f6 via enp0s17: unknown lease 192.168.77.61.
+2026-11-18T01:39:46+0000 netlab-ubuntu timeout[21814]: DHCPREQUEST for 192.168.77.61 from 00:0c:29:ed:66:f6 via enp0s17: unknown lease 192.168.77.61.
+2026-11-18T01:39:49+0000 netlab-ubuntu dhcpd[21820]: DHCPREQUEST for 192.168.77.61 from 00:0c:29:ed:66:f6 via enp0s17: unknown lease 192.168.77.61.
+2026-11-18T01:39:49+0000 netlab-ubuntu timeout[21814]: DHCPREQUEST for 192.168.77.61 from 00:0c:29:ed:66:f6 via enp0s17: unknown lease 192.168.77.61.
+2026-11-18T01:39:58+0000 netlab-ubuntu dhcpd[21820]: DHCPREQUEST for 192.168.77.61 from 00:0c:29:ed:66:f6 via enp0s17: unknown lease 192.168.77.61.
+2026-11-18T01:39:58+0000 netlab-ubuntu timeout[21814]: DHCPREQUEST for 192.168.77.61 from 00:0c:29:ed:66:f6 via enp0s17: unknown lease 192.168.77.61.
+2026-11-18T01:40:18+0000 netlab-ubuntu dhcpd[21820]: DHCPDISCOVER from 00:0c:29:ed:66:f6 (netlab-xp) via enp0s17
+2026-11-18T01:40:18+0000 netlab-ubuntu timeout[21814]: DHCPDISCOVER from 00:0c:29:ed:66:f6 (netlab-xp) via enp0s17
+2026-11-18T01:40:19+0000 netlab-ubuntu dhcpd[21820]: DHCPOFFER on 192.168.77.21 to 00:0c:29:ed:66:f6 (netlab-xp) via enp0s17
+2026-11-18T01:40:19+0000 netlab-ubuntu timeout[21814]: DHCPOFFER on 192.168.77.21 to 00:0c:29:ed:66:f6 (netlab-xp) via enp0s17
+2026-11-18T01:40:21+0000 netlab-ubuntu dhcpd[21820]: DHCPDISCOVER from 00:0c:29:ed:66:f6 (netlab-xp) via enp0s17
+2026-11-18T01:40:21+0000 netlab-ubuntu timeout[21814]: DHCPDISCOVER from 00:0c:29:ed:66:f6 (netlab-xp) via enp0s17
+2026-11-18T01:40:21+0000 netlab-ubuntu timeout[21814]: DHCPOFFER on 192.168.77.21 to 00:0c:29:ed:66:f6 (netlab-xp) via enp0s17
+2026-11-18T01:40:21+0000 netlab-ubuntu dhcpd[21820]: DHCPOFFER on 192.168.77.21 to 00:0c:29:ed:66:f6 (netlab-xp) via enp0s17
+2026-11-18T01:40:29+0000 netlab-ubuntu dhcpd[21820]: DHCPDISCOVER from 00:0c:29:ed:66:f6 (netlab-xp) via enp0s17
+2026-11-18T01:40:29+0000 netlab-ubuntu timeout[21814]: DHCPDISCOVER from 00:0c:29:ed:66:f6 (netlab-xp) via enp0s17
+2026-11-18T01:40:29+0000 netlab-ubuntu timeout[21814]: DHCPOFFER on 192.168.77.21 to 00:0c:29:ed:66:f6 (netlab-xp) via enp0s17
+2026-11-18T01:40:29+0000 netlab-ubuntu dhcpd[21820]: DHCPOFFER on 192.168.77.21 to 00:0c:29:ed:66:f6 (netlab-xp) via enp0s17
+2026-11-18T01:40:29+0000 netlab-ubuntu dhcpd[21820]: DHCPREQUEST for 192.168.77.21 (192.168.77.2) from 00:0c:29:ed:66:f6 (netlab-xp) via enp0s17
+2026-11-18T01:40:29+0000 netlab-ubuntu timeout[21814]: DHCPREQUEST for 192.168.77.21 (192.168.77.2) from 00:0c:29:ed:66:f6 (netlab-xp) via enp0s17
+2026-11-18T01:40:29+0000 netlab-ubuntu timeout[21814]: DHCPACK on 192.168.77.21 to 00:0c:29:ed:66:f6 via enp0s17
+2026-11-18T01:40:29+0000 netlab-ubuntu dhcpd[21820]: DHCPACK on 192.168.77.21 to 00:0c:29:ed:66:f6 via enp0s17
+2026-11-18T01:40:30+0000 netlab-ubuntu systemd[1]: Stopping /usr/bin/timeout 150 /opt/netlab4/a/dhcp/sbin/dhcpd -f -d -4 -cf /opt/netlab4/lease-transition/dhcpd.conf -lf /opt/netlab4/lease-transition/dhcpd.leases enp0s17...
+2026-11-18T01:40:30+0000 netlab-ubuntu systemd[1]: Stopped /usr/bin/timeout 150 /opt/netlab4/a/dhcp/sbin/dhcpd -f -d -4 -cf /opt/netlab4/lease-transition/dhcpd.conf -lf /opt/netlab4/lease-transition/dhcpd.leases enp0s17.

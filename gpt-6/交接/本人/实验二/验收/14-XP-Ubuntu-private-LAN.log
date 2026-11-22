@@ -1,0 +1,217 @@
+
+A:\>ver
+
+Microsoft Windows XP [Version 5.1.2600]
+
+A:\>date /t 
+Tue 11/17/2026 
+
+A:\>time /t 
+03:11 PM
+
+A:\>netsh interface ip set address name="Local Area Connection" static 192.168.77.3 255.255.255.0 none 
+Ok.
+
+
+A:\>if errorlevel 1 goto restore 
+
+A:\>ipconfig /all 
+
+Windows IP Configuration
+
+        Host Name . . . . . . . . . . . . : netlab-xp
+        Primary Dns Suffix  . . . . . . . : 
+        Node Type . . . . . . . . . . . . : Unknown
+        IP Routing Enabled. . . . . . . . : No
+        WINS Proxy Enabled. . . . . . . . : No
+
+Ethernet adapter Local Area Connection:
+
+        Connection-specific DNS Suffix  . : 
+        Description . . . . . . . . . . . : AMD PCNET Family PCI Ethernet Adapter
+        Physical Address. . . . . . . . . : 00-0C-29-ED-66-F6
+        Dhcp Enabled. . . . . . . . . . . : No
+        IP Address. . . . . . . . . . . . : 192.168.77.3
+        Subnet Mask . . . . . . . . . . . : 255.255.255.0
+        Default Gateway . . . . . . . . . : 
+
+A:\>ping 192.168.77.2 
+
+Pinging 192.168.77.2 with 32 bytes of data:
+
+Reply from 192.168.77.2: bytes=32 time<1ms TTL=64
+Reply from 192.168.77.2: bytes=32 time<1ms TTL=64
+Reply from 192.168.77.2: bytes=32 time=1ms TTL=64
+Reply from 192.168.77.2: bytes=32 time<1ms TTL=64
+
+Ping statistics for 192.168.77.2:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 1ms, Average = 0ms
+
+A:\>ping -a -n 3 -l 56 -w 1000 192.168.77.2 
+
+Pinging 192.168.77.2 with 56 bytes of data:
+
+Reply from 192.168.77.2: bytes=56 time<1ms TTL=64
+Reply from 192.168.77.2: bytes=56 time<1ms TTL=64
+Reply from 192.168.77.2: bytes=56 time<1ms TTL=64
+
+Ping statistics for 192.168.77.2:
+    Packets: Sent = 3, Received = 3, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 0ms, Average = 0ms
+
+A:\>cscript //nologo A:\PINGT.VBS 
+> ping.exe -t -w 1000 192.168.77.2
+[Continuous test stopped after 6 seconds.]
+
+Pinging 192.168.77.2 with 32 bytes of data:
+
+Reply from 192.168.77.2: bytes=32 time<1ms TTL=64
+Reply from 192.168.77.2: bytes=32 time<1ms TTL=64
+Reply from 192.168.77.2: bytes=32 time<1ms TTL=64
+Reply from 192.168.77.2: bytes=32 time=1ms TTL=64
+Reply from 192.168.77.2: bytes=32 time<1ms TTL=64
+Reply from 192.168.77.2: bytes=32 time<1ms TTL=64
+Reply from 192.168.77.2: bytes=32 time<1ms TTL=64
+Reply from 192.168.77.2: bytes=32 time<1ms TTL=64
+
+A:\>ping -n 3 -l 5000 -w 1500 192.168.77.2 
+
+Pinging 192.168.77.2 with 5000 bytes of data:
+
+Reply from 192.168.77.2: bytes=5000 time=4ms TTL=64
+Reply from 192.168.77.2: bytes=5000 time<1ms TTL=64
+Reply from 192.168.77.2: bytes=5000 time<1ms TTL=64
+
+Ping statistics for 192.168.77.2:
+    Packets: Sent = 3, Received = 3, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 4ms, Average = 1ms
+
+A:\>ping -n 1 -f -l 1472 192.168.77.2 
+
+Pinging 192.168.77.2 with 1472 bytes of data:
+
+Reply from 192.168.77.2: bytes=1472 time<1ms TTL=64
+
+Ping statistics for 192.168.77.2:
+    Packets: Sent = 1, Received = 1, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 0ms, Average = 0ms
+
+A:\>ping -n 1 -f -l 1473 192.168.77.2 
+
+Pinging 192.168.77.2 with 1473 bytes of data:
+
+Packet needs to be fragmented but DF set.
+
+Ping statistics for 192.168.77.2:
+    Packets: Sent = 1, Received = 0, Lost = 1 (100% loss),
+
+A:\>netstat -a -b -n 
+
+Active Connections
+
+  Proto  Local Address          Foreign Address        State           PID
+  TCP    0.0.0.0:135            0.0.0.0:0              LISTENING       880
+  c:\windows\system32\WS2_32.dll
+  C:\WINDOWS\system32\RPCRT4.dll
+  c:\windows\system32\rpcss.dll
+  C:\WINDOWS\system32\svchost.exe
+  -- unknown component(s) --
+  [svchost.exe]
+
+  TCP    0.0.0.0:445            0.0.0.0:0              LISTENING       4
+  [System]
+
+  TCP    127.0.0.1:1029         0.0.0.0:0              LISTENING       1580
+  [alg.exe]
+
+  TCP    192.168.77.3:139       0.0.0.0:0              LISTENING       4
+  [System]
+
+  UDP    0.0.0.0:500            *:*                                    644
+  [lsass.exe]
+
+  UDP    0.0.0.0:4500           *:*                                    644
+  [lsass.exe]
+
+  UDP    0.0.0.0:445            *:*                                    4
+  [System]
+
+  UDP    127.0.0.1:1025         *:*                                    972
+  c:\windows\system32\WS2_32.dll
+  C:\WINDOWS\system32\WLDAP32.dll
+  C:\WINDOWS\System32\winrnr.dll
+  c:\windows\system32\WS2_32.dll
+  c:\windows\system32\w32time.dll
+  [svchost.exe]
+
+  UDP    127.0.0.1:1900         *:*                                    1060
+  c:\windows\system32\WS2_32.dll
+  c:\windows\system32\ssdpsrv.dll
+  ntdll.dll
+  C:\WINDOWS\system32\kernel32.dll
+  [svchost.exe]
+
+  UDP    127.0.0.1:123          *:*                                    972
+  c:\windows\system32\WS2_32.dll
+  c:\windows\system32\w32time.dll
+  ntdll.dll
+  C:\WINDOWS\system32\kernel32.dll
+  [svchost.exe]
+
+  UDP    192.168.77.3:1900      *:*                                    1060
+  c:\windows\system32\WS2_32.dll
+  c:\windows\system32\ssdpsrv.dll
+  ntdll.dll
+  C:\WINDOWS\system32\kernel32.dll
+  [svchost.exe]
+
+  UDP    192.168.77.3:123       *:*                                    972
+  c:\windows\system32\WS2_32.dll
+  c:\windows\system32\w32time.dll
+  ntdll.dll
+  C:\WINDOWS\system32\kernel32.dll
+  [svchost.exe]
+
+  UDP    192.168.77.3:138       *:*                                    4
+  [System]
+
+  UDP    192.168.77.3:137       *:*                                    4
+  [System]
+
+
+A:\>netsh interface ip set address name="Local Area Connection" source=dhcp 
+Ok.
+
+
+A:\>if errorlevel 1 goto restore_failed 
+
+A:\>ipconfig /all 
+
+Windows IP Configuration
+
+        Host Name . . . . . . . . . . . . : netlab-xp
+        Primary Dns Suffix  . . . . . . . : 
+        Node Type . . . . . . . . . . . . : Unknown
+        IP Routing Enabled. . . . . . . . : No
+        WINS Proxy Enabled. . . . . . . . : No
+
+Ethernet adapter Local Area Connection:
+
+        Connection-specific DNS Suffix  . : 
+        Description . . . . . . . . . . . : AMD PCNET Family PCI Ethernet Adapter
+        Physical Address. . . . . . . . . : 00-0C-29-ED-66-F6
+        Dhcp Enabled. . . . . . . . . . . : Yes
+        Autoconfiguration Enabled . . . . : Yes
+        IP Address. . . . . . . . . . . . : 0.0.0.0
+        Subnet Mask . . . . . . . . . . . : 0.0.0.0
+        Default Gateway . . . . . . . . . : 
+        DHCP Server . . . . . . . . . . . : 255.255.255.255
+
+A:\>time /t 
+03:12 PM
+LAN2_DONE

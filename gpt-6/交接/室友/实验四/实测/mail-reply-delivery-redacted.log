@@ -1,0 +1,9 @@
+Round B
+IMAP folder=INBOX readonly=true UID=1307
+Subject=回复：LAB4-MAIL-20261118-B
+Reply Message-ID=<[id]@whut.edu.cn>
+Outbound Message-ID=<lab4-20261118-b-20261118011502@foxmail.com>
+Correlation=exact reply subject, sender, date and quoted original body; reply headers absent
+Submitted to local recipient=lab4mb@localhost
+Message-ID: <[id]@whut.edu.cn>
+Nov 18 01:28:17 netlab-ubuntu postfix/local[21396]: 6467486A79: to=<lab4mb@localhost>, relay=local, delay=0.02, delays=0.01/0/0/0.01, dsn=2.0.0, status=sent (delivered to mailbox)

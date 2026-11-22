@@ -1,0 +1,179 @@
+
+[2026-11-17T17:48:38+08:00] PC2> boot console
+
+Welcome to Virtual PC Simulator, version 0.6.2
+Dedicated to Daling.
+Build time: Apr 10 2019 02:42:20
+Copyright (c) 2007-2014, Paul Meng (mirnshi@gmail.com)
+All rights reserved.
+
+VPCS is free software, distributed under the terms of the "BSD" licence.
+Source code and license can be found at vpcs.sf.net.
+For more information, please visit wiki.freecode.com.cn.
+
+Press '?' to get help.
+
+VPCS> 
+
+[2026-11-17T17:48:38+08:00] PC2> set pcname PC2
+
+VPCS> 
+
+[2026-11-17T17:48:56+08:00] PC2> ip 192.168.31.12/24
+ip 192.168.31.12/24
+Checking for duplicate address...
+PC1 : 192.168.31.12 255.255.255.0
+
+VPCS> 
+
+[2026-11-17T17:48:56+08:00] PC2> show ip
+show ip
+
+NAME        : VPCS[1]
+IP/MASK     : 192.168.31.12/24
+GATEWAY     : 0.0.0.0
+DNS         : 
+MAC         : 00:50:79:66:68:01
+LPORT       : 20040
+RHOST:PORT  : 127.0.0.1:20041
+MTU:        : 1500
+
+VPCS> 
+
+[2026-11-17T17:49:12+08:00] PC2> ping 192.168.31.21 -c 2
+ping 192.168.31.21 -c 2
+84 bytes from 192.168.31.21 icmp_seq=1 ttl=64 time=1.531 ms
+84 bytes from 192.168.31.21 icmp_seq=2 ttl=64 time=1.316 ms
+
+VPCS> 
+
+[2026-11-17T17:49:14+08:00] PC2> ping 192.168.31.22 -c 2
+ping 192.168.31.22 -c 2
+84 bytes from 192.168.31.22 icmp_seq=1 ttl=64 time=1.348 ms
+84 bytes from 192.168.31.22 icmp_seq=2 ttl=64 time=1.434 ms
+
+VPCS> 
+
+[2026-11-17T17:49:22+08:00] PC2> ip 192.168.31.12/24
+ip 192.168.31.12/24
+Checking for duplicate address...
+PC1 : 192.168.31.12 255.255.255.0
+
+VPCS> 
+
+[2026-11-17T17:49:22+08:00] PC2> show ip
+show ip
+
+NAME        : VPCS[1]
+IP/MASK     : 192.168.31.12/24
+GATEWAY     : 0.0.0.0
+DNS         : 
+MAC         : 00:50:79:66:68:01
+LPORT       : 20040
+RHOST:PORT  : 127.0.0.1:20041
+MTU:        : 1500
+
+VPCS> 
+
+[2026-11-17T17:49:37+08:00] PC2> ping 192.168.31.21 -c 2
+ping 192.168.31.21 -c 2
+84 bytes from 192.168.31.21 icmp_seq=1 ttl=64 time=1.276 ms
+84 bytes from 192.168.31.21 icmp_seq=2 ttl=64 time=1.386 ms
+
+VPCS> 
+
+[2026-11-17T17:49:37+08:00] PC2> ping 192.168.33.22 -c 2
+ping 192.168.33.22 -c 2
+No gateway found
+
+VPCS> 
+
+[2026-11-17T17:49:43+08:00] PC2> ip 192.168.31.140/25
+ip 192.168.31.140/25
+Checking for duplicate address...
+PC1 : 192.168.31.140 255.255.255.128
+
+VPCS> 
+
+[2026-11-17T17:49:43+08:00] PC2> show ip
+show ip
+
+NAME        : VPCS[1]
+IP/MASK     : 192.168.31.140/25
+GATEWAY     : 0.0.0.0
+DNS         : 
+MAC         : 00:50:79:66:68:01
+LPORT       : 20040
+RHOST:PORT  : 127.0.0.1:20041
+MTU:        : 1500
+
+VPCS> 
+
+[2026-11-17T17:49:53+08:00] PC2> ping 192.168.31.21 -c 2
+ping 192.168.31.21 -c 2
+No gateway found
+
+VPCS> 
+
+[2026-11-17T17:49:56+08:00] PC2> ping 192.168.31.150 -c 2
+ping 192.168.31.150 -c 2
+84 bytes from 192.168.31.150 icmp_seq=1 ttl=64 time=1.618 ms
+84 bytes from 192.168.31.150 icmp_seq=2 ttl=64 time=1.323 ms
+
+VPCS> 
+
+[2026-11-17T17:50:02+08:00] PC2> ip 192.168.31.12/24
+ip 192.168.31.12/24
+Checking for duplicate address...
+PC1 : 192.168.31.12 255.255.255.0
+
+VPCS> 
+
+[2026-11-17T17:50:02+08:00] PC2> show ip
+show ip
+
+NAME        : VPCS[1]
+IP/MASK     : 192.168.31.12/24
+GATEWAY     : 0.0.0.0
+DNS         : 
+MAC         : 00:50:79:66:68:01
+LPORT       : 20040
+RHOST:PORT  : 127.0.0.1:20041
+MTU:        : 1500
+
+VPCS> 
+
+[2026-11-17T17:51:04+08:00] PC2> ping 192.168.31.21 -c 2
+ping 192.168.31.21 -c 2
+192.168.31.21 icmp_seq=1 timeout
+192.168.31.21 icmp_seq=2 timeout
+
+VPCS> 
+
+[2026-11-17T17:51:08+08:00] PC2> ping 192.168.31.22 -c 2
+ping 192.168.31.22 -c 2
+192.168.31.22 icmp_seq=1 timeout
+192.168.31.22 icmp_seq=2 timeout
+
+VPCS> 
+
+[2026-11-17T17:51:20+08:00] PC2> show ip
+show ip
+
+NAME        : VPCS[1]
+IP/MASK     : 192.168.31.12/24
+GATEWAY     : 0.0.0.0
+DNS         : 
+MAC         : 00:50:79:66:68:01
+LPORT       : 20040
+RHOST:PORT  : 127.0.0.1:20041
+MTU:        : 1500
+
+VPCS> 
+
+[2026-11-17T17:51:20+08:00] PC2> save
+save
+Saving startup configuration to startup.vpc
+.  done
+
+VPCS> 

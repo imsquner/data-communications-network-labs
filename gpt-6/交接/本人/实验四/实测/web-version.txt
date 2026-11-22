@@ -1,0 +1,26 @@
+Server version: Apache/2.4.71 (Unix)
+Server built:   Nov 18 2026 01:04:46
+Server's Module Magic Number: 20120211:142
+Server loaded:  APR 1.6.3, APR-UTIL 1.6.1, PCRE 10.31 2018-02-12
+Compiled using: APR 1.6.3, APR-UTIL 1.6.1, PCRE 10.31 2018-02-12
+Architecture:   64-bit
+Server MPM:     event
+  threaded:     yes (fixed thread count)
+    forked:     yes (variable process count)
+Server compiled with....
+ -D APR_HAS_SENDFILE
+ -D APR_HAS_MMAP
+ -D APR_HAVE_IPV6 (IPv4-mapped addresses enabled)
+ -D APR_USE_SYSVSEM_SERIALIZE
+ -D APR_USE_PTHREAD_SERIALIZE
+ -D SINGLE_LISTEN_UNSERIALIZED_ACCEPT
+ -D APR_HAS_OTHER_CHILD
+ -D AP_HAVE_RELIABLE_PIPED_LOGS
+ -D DYNAMIC_MODULE_LIMIT=256
+ -D HTTPD_ROOT="/opt/netlab4/a/apache"
+ -D SUEXEC_BIN="/opt/netlab4/a/apache/bin/suexec"
+ -D DEFAULT_PIDLOG="logs/httpd.pid"
+ -D DEFAULT_SCOREBOARD="logs/apache_runtime_status"
+ -D DEFAULT_ERRORLOG="logs/error_log"
+ -D AP_TYPES_CONFIG_FILE="conf/mime.types"
+ -D SERVER_CONFIG_FILE="conf/httpd.conf"

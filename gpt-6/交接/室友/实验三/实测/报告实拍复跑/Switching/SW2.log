@@ -1,0 +1,336 @@
+
+[2026-11-17T18:28:59+08:00] SW2> boot console
+Connected to Dynamips VM "SW2" (ID 2, type c3600) - Console port
+Press ENTER to get the prompt.
+ is
+subject to restrictions as set forth in subparagraph
+(c) of the Commercial Computer Software - Restricted
+Rights clause at FAR sec. 52.227-19 and subparagraph
+(c) (1) (ii) of the Rights in Technical Data and Computer
+Software clause at DFARS sec. 252.227-7013.
+
+           cisco Systems, Inc.
+           170 West Tasman Drive
+           San Jose, California 95134-1706
+
+
+
+Cisco IOS Software, 3600 Software (C3640-A3JS-M), Version 12.4(25d), RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2010 by Cisco Systems, Inc.
+Compiled Wed 18-Aug-10 06:58 by prod_rel_team
+
+Cisco 3640 (R4700) processor (revision 0xFF) with 124928K/6144K bytes of memory.
+Processor board ID FF1045C5
+R4700 CPU at 100MHz, Implementation 33, Rev 1.2
+16 FastEthernet interfaces
+DRAM configuration is 64 bits wide with parity enabled.
+125K bytes of NVRAM.
+8192K bytes of processor board System flash (Read/Write)
+0K bytes of  PCMCIA Slot0 flash (Read/Write)
+
+% There may not be enough space available to collect the complete crashinfo
+% It would be advisable to have 280755 bytes free space on flash:crashinfo
+
+
+Press RETURN to get started!
+
+
+*Mar  1 00:00:02.515: %LINEPROTO-5-UPDOWN: Line protocol on Interface VoIP-Null0, changed state to up
+*Mar  1 00:00:02.779: %LINEPROTO-5-UPDOWN: Line protocol on Interface IPv6-mpls, changed state to up
+*Mar  1 00:00:03.143: %SYS-5-CONFIG_I: Configured from memory by console
+*Mar  1 00:00:03.799: %SYS-5-RESTART: System restarted --
+Cisco IOS Software, 3600 Software (C3640-A3JS-M), Version 12.4(25d), RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2010 by Cisco Systems, Inc.
+Compiled Wed 18-Aug-10 06:58 by prod_rel_team
+*Mar  1 00:00:03.815: %SNMP-5-COLDSTART: SNMP agent on host SW2 is undergoing a cold start
+*Mar  1 00:00:05.147: %LINK-3-UPDOWN: Interface FastEthernet0/15, changed state to up
+*Mar  1 00:00:05.151: %LINK-3-UPDOWN: Interface FastEthernet0/14, changed state to up
+*Mar  1 00:00:05.159: %LINK-3-UPDOWN: Interface FastEthernet0/13, changed state to up
+*Mar  1 00:00:05.163: %LINK-3-UPDOWN: Interface FastEthernet0/12, changed state to up
+*Mar  1 00:00:05.167: %LINK-3-UPDOWN: Interface FastEthernet0/11, changed state to up
+*Mar  1 00:00:05.171: %LINK-3-UPDOWN: Interface FastEthernet0/10, changed state to up
+*Mar  1 00:00:05.179: %LINK-3-UPDOWN: Interface FastEthernet0/9, changed state to up
+*Mar  1 00:00:05.183: %LINK-3-UPDOWN: Interface FastEthernet0/8, changed state to up
+*Mar  1 00:00:05.187: %LINK-3-UPDOWN: Interface FastEthernet0/7, changed state to up
+*Mar  1 00:00:05.191: %LINK-3-UPDOWN: Interface FastEthernet0/6, changed state to up
+*Mar  1 00:00:05.199: %LINK-3-UPDOWN: Interface FastEthernet0/5, changed state to up
+*Mar  1 00:00:05.203: %LINK-3-UPDOWN: Interface FastEthernet0/4, changed state to up
+*Mar  1 00:00:05.207: %LINK-3-UPDOWN: Interface FastEthernet0/3, changed state to up
+*Mar  1 00:00:06.147: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/15, changed state to down
+*Mar  1 00:00:06.151: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/14, changed state to down
+*Mar  1 00:00:06.159: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/13, changed state to down
+*Mar  1 00:00:06.163: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/12, changed state to down
+*Mar  1 00:00:06.167: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/11, changed state to down
+*Mar  1 00:00:06.171: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/10, changed state to down
+*Mar  1 00:00:06.179: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/9, changed state to down
+*Mar  1 00:00:06.183: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/8, changed state to down
+*Mar  1 00:00:06.187: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/7, changed state to down
+*Mar  1 00:00:06.191: %LINEPROTO-5-UPDOWN: Line protocol on Interface FastEthernet0/6, changed state to down
+SW2>
+
+[2026-11-17T18:28:59+08:00] SW2> enable
+enable
+SW2#
+
+[2026-11-17T18:28:59+08:00] SW2> terminal length 0
+terminal length 0
+SW2#
+
+[2026-11-17T18:28:59+08:00] SW2> configure terminal
+configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+SW2(config)#
+
+[2026-11-17T18:28:59+08:00] SW2> hostname SW2
+hostname SW2
+SW2(config)#
+
+[2026-11-17T18:28:59+08:00] SW2> no ip domain lookup
+no ip domain lookup
+SW2(config)#
+
+[2026-11-17T18:29:00+08:00] SW2> line con 0
+line con 0
+SW2(config-line)#
+
+[2026-11-17T18:29:00+08:00] SW2> exec-timeout 0 0
+exec-timeout 0 0
+SW2(config-line)#
+
+[2026-11-17T18:29:00+08:00] SW2> logging synchronous
+logging synchronous
+SW2(config-line)#
+
+[2026-11-17T18:29:00+08:00] SW2> exit
+exit
+SW2(config)#
+
+[2026-11-17T18:29:00+08:00] SW2> end
+end
+SW2#
+
+[2026-11-17T18:29:02+08:00] SW2> configure terminal
+configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+SW2(config)#
+
+[2026-11-17T18:29:02+08:00] SW2> interface FastEthernet0/0
+interface FastEthernet0/0
+SW2(config-if)#
+
+[2026-11-17T18:29:02+08:00] SW2> async
+
+*Mar
+
+[2026-11-17T18:29:02+08:00] SW2> switchport access vlan 1
+  1 00:00:14.991: %SYS-5-CONFIG_I: Configured from console by console
+SW2(config-if)#
+
+[2026-11-17T18:29:02+08:00] SW2> async
+swit
+
+[2026-11-17T18:29:02+08:00] SW2> exit
+chport access vlan 1
+SW2(config-if)#exit
+SW2(config)#
+
+[2026-11-17T18:29:02+08:00] SW2> end
+end
+SW2#
+
+[2026-11-17T18:29:02+08:00] SW2> configure terminal
+configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+SW2(config)#
+
+[2026-11-17T18:29:02+08:00] SW2> interface FastEthernet0/1
+interface FastEthernet0/1
+SW2(config-if)#
+
+[2026-11-17T18:29:03+08:00] SW2> switchport access vlan 1
+switchport access vlan 1
+SW2(config-if)#
+
+[2026-11-17T18:29:03+08:00] SW2> exit
+exit
+SW2(config)#
+
+[2026-11-17T18:29:03+08:00] SW2> end
+end
+SW2#
+
+[2026-11-17T18:29:03+08:00] SW2> configure terminal
+configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+SW2(config)#
+
+[2026-11-17T18:29:03+08:00] SW2> interface FastEthernet0/2
+interface FastEthernet0/2
+SW2(config-if)#
+
+[2026-11-17T18:29:03+08:00] SW2> switchport access vlan 1
+switchport access vlan 1
+SW2(config-if)#
+
+[2026-11-17T18:29:03+08:00] SW2> exit
+exit
+SW2(config)#
+
+[2026-11-17T18:29:03+08:00] SW2> end
+end
+SW2#
+
+[2026-11-17T18:30:30+08:00] SW2> async
+
+*Mar  1 00:00:17.319: %SYS-5-CONFIG_I: Configured from console by console
+*Mar  1 00:00:17.775: %SYS-5-CONFIG_I: Configured from console by console
+*Mar  1 00:00:18.239: %SYS-5-CONFIG_I: Configured from console by console
+SW2#
+*Mar  1 00:00:48.067: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to up
+SW2#
+
+[2026-11-17T18:30:30+08:00] SW2> vlan database
+vlan database
+SW2(vlan)#
+
+[2026-11-17T18:30:30+08:00] SW2> vlan 200 name VLAN200
+vlan 200 name VLAN200
+VLAN 200 modified:
+    Name: VLAN200
+SW2(vlan)#
+
+[2026-11-17T18:30:30+08:00] SW2> vlan 300 name VLAN300
+vlan 300 name VLAN300
+VLAN 300 modified:
+    Name: VLAN300
+SW2(vlan)#
+
+[2026-11-17T18:30:30+08:00] SW2> exit
+exit
+APPLY completed.
+Exiting....
+SW2#
+
+[2026-11-17T18:30:30+08:00] SW2> configure terminal
+configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+SW2(config)#
+
+[2026-11-17T18:30:30+08:00] SW2> interface FastEthernet0/0
+interface FastEthernet0/0
+SW2(config-if)#
+
+[2026-11-17T18:30:30+08:00] SW2> switchport mode access
+switchport mode access
+SW2(config-if)#
+
+[2026-11-17T18:30:30+08:00] SW2> switchport access vlan 200
+switchport access vlan 200
+SW2(config-if)#
+
+[2026-11-17T18:30:31+08:00] SW2> no shutdown
+no shutdown
+SW2(config-if)#
+
+[2026-11-17T18:30:31+08:00] SW2> exit
+exit
+SW2(config)#
+
+[2026-11-17T18:30:31+08:00] SW2> end
+end
+SW2#
+
+[2026-11-17T18:30:31+08:00] SW2> configure terminal
+configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+SW2(config)#
+
+[2026-11-17T18:30:31+08:00] SW2> interface FastEthernet0/1
+interface FastEthernet0/1
+SW2(config-if)#
+
+[2026-11-17T18:30:31+08:00] SW2> switchport mode access
+switchport mode access
+SW2(config-if)#
+
+[2026-11-17T18:30:31+08:00] SW2> switchport access vlan 200
+switchport access vlan 200
+SW2(config-if)#
+
+[2026-11-17T18:30:31+08:00] SW2> no shutdown
+no shutdown
+SW2(config-if)#
+
+[2026-11-17T18:30:31+08:00] SW2> exit
+exi
+*Mar  1 00:01:39.715: %SYS-5-CONFIG_I: Configured from console by consolet
+SW2(config)#
+
+[2026-11-17T18:30:31+08:00] SW2> end
+end
+SW2#
+
+[2026-11-17T18:30:32+08:00] SW2> configure terminal
+configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+SW2(config)#
+
+[2026-11-17T18:30:32+08:00] SW2> interface FastEthernet0/2
+interface FastEthernet0/2
+SW2(config-if)#
+
+[2026-11-17T18:30:32+08:00] SW2> switchport mode access
+switchport mode access
+SW2(config-if)#
+
+[2026-11-17T18:30:32+08:00] SW2> switchport access vlan 300
+switchport access vlan 300
+SW2(config-if)#
+
+[2026-11-17T18:30:32+08:00] SW2> no shutdown
+no shutdown
+SW2(config-if)#
+
+[2026-11-17T18:30:32+08:00] SW2> exit
+exit
+SW2(config)#
+
+[2026-11-17T18:30:32+08:00] SW2> end
+end
+SW2#
+
+[2026-11-17T18:30:33+08:00] SW2> show vlan-switch brief
+show vlan-switch brief
+
+VLAN Name                             Status    Ports
+---- -------------------------------- --------- -------------------------------
+1    default                          active    Fa0/3, Fa0/4, Fa0/5, Fa0/6
+                                                Fa0/7, Fa0/8, Fa0/9, Fa0/10
+                                                Fa0/11, Fa0/12, Fa0/13, Fa0/14
+                                                Fa0/15
+200  VLAN200                          active    Fa0/0, Fa0/1
+300  VLAN300                          active    Fa0/2
+1002 fddi-default                     active    
+1003 token-ring-default               active    
+1004 fddinet-default                  active    
+1005 trnet-default                    active    
+SW2#
+
+[2026-11-17T18:30:33+08:00] SW2> async
+
+*Mar  1 
+
+[2026-11-17T18:30:34+08:00] SW2> show interfaces FastEthernet0/0 switchport
+00:01:41.203: %SYS-5-CONFIG_I: Configured from console by console
+SW2#
+
+[2026-11-17T18:30:34+08:00] SW2> async
+
+*Mar 
+
+[2026-11-17T18:30:34+08:00] SW2> show vlan-switch brief
+ 1 00:01:42.595: %SYS-5-CONFIG_I: Configured from console by console
+*Mar  1 00:01:43.007: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to down
+SW2#
